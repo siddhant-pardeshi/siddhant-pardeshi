@@ -11,7 +11,7 @@
   <a href="https://linkedin.com/in/siddhant-pardeshi-53788221a"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"/></a>
   <a href="mailto:siddhantpardeshi307@gmail.com"><img src="https://img.shields.io/badge/Gmail-Transmit-ff2e97?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
   <a href="docs/Siddhant_Pardeshi_Resume.pdf"><img src="https://img.shields.io/badge/R%C3%A9sum%C3%A9-PDF-bd5fff?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&labelColor=0d1117" alt="Resume PDF"/></a>
-  <a href="https://komarev.com/ghpvc/?username=siddhant-pardeshi&label=PROFILE+VIEWS&color=00e5ff&style=for-the-badge"><img src="https://komarev.com/ghpvc/?username=siddhant-pardeshi&label=PROFILE+VIEWS&color=00e5ff&style=for-the-badge" alt="profile views"/></a>
+  <a href="https://komarev.com/ghpvc/?username=siddhant-pardeshi&style=for-the-badge&label=PROFILE+VIEWS&color=00e5ff"><img src="https://komarev.com/ghpvc/?username=siddhant-pardeshi&style=for-the-badge&label=PROFILE+VIEWS&color=00e5ff" alt="profile views"/></a>
   <br/><br/>
   <img src="https://img.shields.io/badge/MISSION-OPEN%20TO%20OPPORTUNITIES-39ff14?style=flat-square&labelColor=0d1117" alt="open to opportunities"/> <img src="https://img.shields.io/badge/BASE-PUNE%2C%20INDIA-67e8f9?style=flat-square&labelColor=0d1117" alt="Pune, India"/> <img src="https://img.shields.io/badge/STATUS-SCROLL%20FOR%20CERTIFICATES%20%E2%AC%87-ffd166?style=flat-square&labelColor=0d1117" alt="scroll for certificates"/>
 </div>
