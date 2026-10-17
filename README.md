@@ -4,9 +4,9 @@
      ══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="assets/svg/header-banner.svg" width="100%" alt="SIDDHANT PARDESHI — Software Developer · Java · Spring Boot · React · MySQL · AWS"/>
+  <img src="assets/svg/header-banner.svg" width="100%" alt="SIDDHANT PARDESHI — Java Backend Engineer · Spring Boot · MySQL · AWS · React"/>
   <br/><br/>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=850&color=00E5FF&center=true&vCenter=true&width=780&height=44&lines=Full-Stack+Java+Developer+%E2%80%94+Spring+Boot+%C3%97+React;GATE+2025+Qualified+%C2%B7+CGPA+8.13%2F10;REST+APIs+%C2%B7+MySQL+%C2%B7+AWS+Cloud;Open+to+Software+Developer+roles+%E2%80%94+Pune" alt="rotating taglines"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=850&color=00E5FF&center=true&vCenter=true&width=780&height=44&lines=Java+Backend+Engineer+%E2%80%94+Spring+Boot+%C3%97+MySQL+%C3%97+AWS;GATE+2025+Qualified+%C2%B7+CGPA+8.13%2F10;18%2B+REST+APIs+%C2%B7+Layered+Architecture+%C2%B7+React+UIs;Open+to+Java+Backend+%26+Software+Engineer+roles" alt="rotating taglines"/></a>
   <br/><br/>
   <a href="https://linkedin.com/in/siddhant-pardeshi-53788221a"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"/></a>
   <a href="mailto:siddhantpardeshi307@gmail.com"><img src="https://img.shields.io/badge/Gmail-Transmit-ff2e97?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
@@ -27,14 +27,16 @@
 ```yaml
 identity:
   name:    Siddhant Pardeshi
-  role:    Software Developer
-  stack:   [Java 17, Spring Boot, React, MySQL, AWS]
+  role:    Java Backend Engineer
+  target:  [Java Backend Engineer, Software Engineer]
+  stack:   [Java 17, Spring Boot, MySQL, AWS, React]
   base:    Pune, Maharashtra, IN
   status:  available-immediately
 
 signal:
-  - builds full-stack apps end-to-end —
-    schema → layered REST backend → React UI
+  - builds production-style back-ends end-to-end —
+    schema → layered REST services → React UI
+  - 18+ REST APIs shipped across Spring Boot projects
   - GATE 2025 qualified (Computer Science & IT)
   - B.E. Computer Engineering, SPPU — 8.13/10
     First Class with Distinction
@@ -95,15 +97,15 @@ signal:
 <tr>
 <td width="33.3%"><img src="https://github-readme-stats.vercel.app/api?username=siddhant-pardeshi&show_icons=true&hide_border=true&bg_color=00000000&title_color=00e5ff&icon_color=bd5fff&text_color=c9d1d9&ring_color=00e5ff" width="100%" alt="GitHub stats"/></td>
 <td width="33.3%"><img src="https://streak-stats.demolab.com?user=siddhant-pardeshi&hide_border=true&background=00000000&ring=00e5ff&fire=ff2e97&currStreakLabel=00e5ff&sideLabels=c9d1d9&currStreakNum=ffffff&dates=8b949e" width="100%" alt="GitHub streak"/></td>
-<td width="33.3%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siddhant-pardeshi&layout=compact&hide_border=true&bg_color=00000000&title_color=00e5ff&text_color=c9d1d9" width="100%" alt="Top languages"/></td>
+<td width="33.3%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siddhant-pardeshi&layout=compact&hide_border=true&bg_color=00000000&title_color=00e5ff&text_color=c9d1d9&exclude_repo=asset-intelligence-copilot,HospitalShield-AI,flytbase-ahc-agentic-testing,Recycle_website,Womens_Day_Website,React_IPLproject,PortfolioWebsite,90DaysOfDevOps&hide=html,css&langs_count=8" width="100%" alt="Top languages"/></td>
 </tr>
 </table>
 <br/>
 
 <table>
 <tr>
-<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=siddhant-pardeshi&theme=2077&exclude=repo&animation=draw&duration=6" width="100%" alt="Repos per language donut chart"/></td>
-<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=siddhant-pardeshi&theme=2077&exclude=repo&animation=draw&duration=6" width="100%" alt="Most committed languages donut chart"/></td>
+<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Repos per language donut chart"/></td>
+<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Most committed languages donut chart"/></td>
 <td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=siddhant-pardeshi&theme=2077&utcOffset=8&animation=load&duration=4" width="100%" alt="Productive time radial clock"/></td>
 </tr>
 </table>
