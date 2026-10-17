@@ -293,7 +293,6 @@ signal:
 
 ```diff
 + 🥇 GATE 2025 Qualified — Computer Science & IT (Score 370 · AIR 18571)
-+ 🏅 Autonomous UI Testing Hackathon — AWARD · FlytBase Labs
 + 🌍 FUSION 2026 International Hackathon — Participant, Certificate of Achievement (SKNCOE)
 + 🤖 FlytBase Tireless Hand Challenge — Certificate of Participation (Sept 2026)
 + 🎖️ NPTEL (IIT Kharagpur) — Programming in Java · ELITE · 71% (25/25 assignments)
