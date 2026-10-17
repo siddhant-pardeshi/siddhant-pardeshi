@@ -272,15 +272,7 @@ signal:
 `NMIET, Dept. of Computer Engineering` — Apr 2025
 
 </td>
-<td width="50%" align="center">
-
-[![Google Drive Vault](assets/certs/cards/drive-vault.png)](https://drive.google.com/drive/folders/1pcWJiQPKWGCaxv9eeoPJ1xnNxImV9U01?usp=sharing)
-
-**THE FULL VAULT** 🗂️
-`every certificate · one link`
-[📂 Open on Google Drive](https://drive.google.com/drive/folders/1pcWJiQPKWGCaxv9eeoPJ1xnNxImV9U01?usp=sharing)
-
-</td>
+<td></td>
 </tr>
 </table>
 
