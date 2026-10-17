@@ -4,9 +4,9 @@
      ══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="assets/svg/header-banner.svg" width="100%" alt="SIDDHANT PARDESHI — Java Backend Engineer · Spring Boot · MySQL · AWS · React"/>
+  <img src="assets/svg/header-banner.svg" width="100%" alt="SIDDHANT PARDESHI — Software Developer · Java · Spring Boot · MySQL · AWS · React"/>
   <br/><br/>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=850&color=00E5FF&center=true&vCenter=true&width=780&height=44&lines=Java+Backend+Engineer+%E2%80%94+Spring+Boot+%C3%97+MySQL+%C3%97+AWS;GATE+2025+Qualified+%C2%B7+CGPA+8.13%2F10;18%2B+REST+APIs+%C2%B7+Layered+Architecture+%C2%B7+React+UIs;Open+to+Java+Backend+%26+Software+Engineer+roles" alt="rotating taglines"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=850&color=00E5FF&center=true&vCenter=true&width=780&height=44&lines=Building+back-ends+with+Java+%C2%B7+Spring+Boot+%C2%B7+MySQL;GATE+2025+Qualified+%C2%B7+CGPA+8.13%2F10;18%2B+REST+APIs+%C2%B7+Layered+Architecture+%C2%B7+React+UIs;Open+to+Software+Developer+roles" alt="rotating taglines"/></a>
   <br/><br/>
   <a href="https://linkedin.com/in/siddhant-pardeshi-53788221a"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"/></a>
   <a href="mailto:siddhantpardeshi307@gmail.com"><img src="https://img.shields.io/badge/Gmail-Transmit-ff2e97?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
@@ -27,8 +27,8 @@
 ```yaml
 identity:
   name:    Siddhant Pardeshi
-  role:    Java Backend Engineer
-  target:  [Java Backend Engineer, Software Engineer]
+  role:    Software Developer
+  seeking: Software Developer · Backend roles
   stack:   [Java 17, Spring Boot, MySQL, AWS, React]
   base:    Pune, Maharashtra, IN
   status:  available-immediately

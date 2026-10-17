@@ -25,7 +25,7 @@
 
   <!-- L2 : output -->
   <clipPath id="c2"><rect x="44" y="119" width="0" height="30"><animate attributeName="width" from="0" to="740" dur="1.2s" begin="1.4s" fill="freeze"/></rect></clipPath>
-  <text x="68" y="143" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#7ee0ff" clip-path="url(#c2)">siddhant-pardeshi · Java Backend Engineer — Spring Boot · MySQL</text>
+  <text x="68" y="143" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#7ee0ff" clip-path="url(#c2)">siddhant-pardeshi · Software Developer — Java · Spring Boot</text>
 
   <!-- L3 : $ cat focus.txt -->
   <clipPath id="c3"><rect x="44" y="152" width="0" height="30"><animate attributeName="width" from="0" to="330" dur="0.9s" begin="2.9s" fill="freeze"/></rect></clipPath>

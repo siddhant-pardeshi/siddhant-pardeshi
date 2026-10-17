@@ -82,7 +82,7 @@
 
   <!-- subtitle -->
   <text x="750" y="286" text-anchor="middle" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="23" letter-spacing="4" fill="#8be9fd">
-    JAVA BACKEND ENGINEER — SPRING BOOT · MYSQL · AWS · REACT
+    SOFTWARE DEVELOPER — JAVA · SPRING BOOT · MYSQL · AWS · REACT
     <animate attributeName="opacity" values="0.82;1;0.82" dur="2.8s" repeatCount="indefinite"/>
   </text>
 
