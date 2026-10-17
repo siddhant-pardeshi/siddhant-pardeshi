@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="600" viewBox="0 0 880 600" role="img" aria-label="Terminal session typing Siddhant's developer profile">
+  <defs>
+    <linearGradient id="tbody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1424"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <filter id="tsoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect x="20" y="20" width="840" height="560" rx="18" fill="url(#tbody)" stroke="#1c2a44" stroke-width="1.6"/>
+  <rect x="20" y="20" width="840" height="46" rx="18" fill="#111a2c"/>
+  <rect x="20" y="48" width="840" height="18" fill="#111a2c"/>
+  <line x1="21" y1="66.5" x2="859" y2="66.5" stroke="#1c2a44" stroke-width="1.2"/>
+
+  <circle cx="52" cy="43" r="7" fill="#ff5f56"/>
+  <circle cx="76" cy="43" r="7" fill="#ffbd2e"/>
+  <circle cx="100" cy="43" r="7" fill="#27c93f"/>
+  <text x="440" y="49" text-anchor="middle" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="15" fill="#8b949e">siddhant@pune — ~/career — bash</text>
+
+  <!-- L1 : $ whoami -->
+  <clipPath id="c1"><rect x="44" y="86" width="0" height="30"><animate attributeName="width" from="0" to="210" dur="0.8s" begin="0.4s" fill="freeze"/></rect></clipPath>
+  <text x="48" y="110" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" clip-path="url(#c1)"><tspan fill="#39ff14">$</tspan><tspan fill="#e6edf3" dx="10">whoami</tspan></text>
+
+  <!-- L2 : output -->
+  <clipPath id="c2"><rect x="44" y="119" width="0" height="30"><animate attributeName="width" from="0" to="740" dur="1.2s" begin="1.4s" fill="freeze"/></rect></clipPath>
+  <text x="68" y="143" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#7ee0ff" clip-path="url(#c2)">siddhant-pardeshi · Software Developer — Java / Spring Boot / React</text>
+
+  <!-- L3 : $ cat focus.txt -->
+  <clipPath id="c3"><rect x="44" y="152" width="0" height="30"><animate attributeName="width" from="0" to="330" dur="0.9s" begin="2.9s" fill="freeze"/></rect></clipPath>
+  <text x="48" y="176" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" clip-path="url(#c3)"><tspan fill="#39ff14">$</tspan><tspan fill="#e6edf3" dx="10">cat focus.txt</tspan></text>
+
+  <!-- L4 : output -->
+  <clipPath id="c4"><rect x="44" y="185" width="0" height="30"><animate attributeName="width" from="0" to="720" dur="1.2s" begin="4.0s" fill="freeze"/></rect></clipPath>
+  <text x="68" y="209" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#c9a6ff" clip-path="url(#c4)">scalable back-ends · layered architecture · REST APIs · cloud</text>
+
+  <!-- L5 : $ java Achievements.java -->
+  <clipPath id="c5"><rect x="44" y="218" width="0" height="30"><animate attributeName="width" from="0" to="520" dur="1.1s" begin="5.5s" fill="freeze"/></rect></clipPath>
+  <text x="48" y="242" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" clip-path="url(#c5)"><tspan fill="#39ff14">$</tspan><tspan fill="#e6edf3" dx="10">java Achievements.java</tspan></text>
+
+  <!-- L6-L9 : achievement output -->
+  <clipPath id="c6"><rect x="44" y="251" width="0" height="30"><animate attributeName="width" from="0" to="600" dur="0.7s" begin="7.0s" fill="freeze"/></rect></clipPath>
+  <text x="68" y="275" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#8affc1" clip-path="url(#c6)">[✓] GATE 2025 — QUALIFIED · Computer Science &amp; IT</text>
+
+  <clipPath id="c7"><rect x="44" y="284" width="0" height="30"><animate attributeName="width" from="0" to="600" dur="0.7s" begin="7.9s" fill="freeze"/></rect></clipPath>
+  <text x="68" y="308" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#8affc1" clip-path="url(#c7)">[✓] B.E. Computer Engineering — CGPA 8.13 / 10</text>
+
+  <clipPath id="c8"><rect x="44" y="317" width="0" height="30"><animate attributeName="width" from="0" to="640" dur="0.7s" begin="8.8s" fill="freeze"/></rect></clipPath>
+  <text x="68" y="341" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#8affc1" clip-path="url(#c8)">[✓] NPTEL (IIT Kharagpur) Elite · AWS Cloud Practitioner</text>
+
+  <clipPath id="c9"><rect x="44" y="350" width="0" height="30"><animate attributeName="width" from="0" to="680" dur="0.7s" begin="9.7s" fill="freeze"/></rect></clipPath>
+  <text x="68" y="374" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#8affc1" clip-path="url(#c9)">[✓] Hackathons — FUSION 2026 · FlytBase THC · UI-Testing Award</text>
+
+  <!-- L10 : final prompt + blinking cursor -->
+  <text x="48" y="424" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#39ff14">$</text>
+  <rect x="66" y="408" width="11" height="22" fill="#7ee0ff">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- footer status bar -->
+  <line x1="21" y1="537" x2="859" y2="537" stroke="#1c2a44" stroke-width="1.2"/>
+  <g font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="14" fill="#5b6b85">
+    <text x="40" y="560"><tspan fill="#39ff14">●</tspan> java 17</text>
+    <text x="150" y="560"><tspan fill="#7ee0ff">●</tspan> spring-boot 3</text>
+    <text x="290" y="560"><tspan fill="#c9a6ff">●</tspan> react</text>
+    <text x="390" y="560"><tspan fill="#ffd166">●</tspan> mysql</text>
+    <text x="480" y="560"><tspan fill="#ff2e97">●</tspan> aws</text>
+    <text x="820" y="560" text-anchor="end">UTF-8</text>
+  </g>
+</svg>

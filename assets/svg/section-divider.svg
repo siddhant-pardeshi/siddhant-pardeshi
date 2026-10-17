@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="18" viewBox="0 0 1200 18" role="img" aria-label="animated neon divider">
+  <defs>
+    <linearGradient id="dg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#00e5ff" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#bd5fff" stop-opacity="0.95"/>
+      <stop offset="0.75" stop-color="#ff2e97" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ff2e97" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dsoft" x="-50%" y="-200%" width="200%" height="500%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+  <rect x="60" y="7.6" width="1080" height="2.8" rx="1.4" fill="url(#dg)" filter="url(#dsoft)" opacity="0.8"/>
+  <rect x="60" y="7.6" width="1080" height="2.8" rx="1.4" fill="url(#dg)"/>
+  <circle r="4.5" cx="0" cy="9" fill="#ffffff">
+    <animate attributeName="cx" values="70;1130;70" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.9;0.9" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="10" cx="0" cy="9" fill="#00e5ff" opacity="0.35" filter="url(#dsoft)">
+    <animate attributeName="cx" values="70;1130;70" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
