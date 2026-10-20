@@ -42,7 +42,7 @@ signal:
     First Class with Distinction
   - NPTEL (IIT Kharagpur) Elite — Programming in Java
   - AWS Cloud Practitioner Essentials certified
-  - multi-hackathon veteran (FUSION 2026, FlytBase)
+  - multi-hackathon veteran (FUSION 2026 · FlytBase · Hacktoberfest)
 ```
 
 </td>
@@ -54,7 +54,7 @@ signal:
 
 `▸ CGPA` — **8.13 / 10** · SPPU
 
-`▸ CERTIFICATIONS` — **11** verified in the vault below
+`▸ CERTIFICATIONS` — **12** verified in the vault below
 
 `▸ REST APIs shipped` — **18+** across projects
 
@@ -228,6 +228,25 @@ signal:
 <tr>
 <td width="50%" align="center">
 
+[![AI Hackers Collective x Hacktoberfest Hack Day](assets/certs/cards/ahc-hacktoberfest-hack-day.png)](docs/certificates/ahc-hacktoberfest-hack-day.pdf)
+
+**AI Hackers Collective × Hacktoberfest — Hack Day** 🎃
+`AI Hackers Collective · supported by FlytBase & MLH` — Oct 2026
+[📄 PDF](docs/certificates/ahc-hacktoberfest-hack-day.pdf)
+
+</td>
+<td width="50%" align="center">
+
+[![NMIET TechVision 2K25](assets/certs/cards/nmiet-techvision-2k25.png)](assets/certs/cards/nmiet-techvision-2k25.png)
+
+**TechVision 2K25 — Final Year Project Competition** 🎓
+`NMIET, Dept. of Computer Engineering` — Apr 2025
+
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+
 [![iNeuron C C++ and DSA](assets/certs/cards/ineuron-cpp-dsa.png)](docs/certificates/ineuron-cpp-dsa.pdf)
 
 **C, C++ & DSA in Depth** ⚙️
@@ -265,17 +284,6 @@ signal:
 
 </td>
 </tr>
-<tr>
-<td width="50%" align="center">
-
-[![NMIET TechVision 2K25](assets/certs/cards/nmiet-techvision-2k25.png)](assets/certs/cards/nmiet-techvision-2k25.png)
-
-**TechVision 2K25 — Final Year Project Competition** 🎓
-`NMIET, Dept. of Computer Engineering` — Apr 2025
-
-</td>
-<td></td>
-</tr>
 </table>
 
 <div align="center">
@@ -295,6 +303,7 @@ signal:
 + 🥇 GATE 2025 Qualified — Computer Science & IT (Score 370 · AIR 18571)
 + 🌍 FUSION 2026 International Hackathon — Participant, Certificate of Achievement (SKNCOE)
 + 🤖 FlytBase Tireless Hand Challenge — Certificate of Participation (Sept 2026)
++ 🎃 AI Hackers Collective × Hacktoberfest Hack Day — Certificate of Participation (Oct 2026)
 + 🎖️ NPTEL (IIT Kharagpur) — Programming in Java · ELITE · 71% (25/25 assignments)
 + 🧮 DSA x2 — LearnYard 100% Job-Ready · iNeuron C/C++ & DSA in Depth
 + 💰 Vidyadhan Scholarship — selected for Academic Excellence
