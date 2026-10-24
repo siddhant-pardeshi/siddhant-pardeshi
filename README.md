@@ -332,9 +332,8 @@ signal:
   <a href="mailto:siddhantpardeshi307@gmail.com"><img src="https://img.shields.io/badge/Email-siddhantpardeshi307-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
   <a href="https://github.com/siddhant-pardeshi"><img src="https://img.shields.io/badge/GitHub-siddhant--pardeshi-00e5ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="GitHub"/></a>
   <a href="docs/Siddhant_Pardeshi_Resume.pdf"><img src="https://img.shields.io/badge/Download-R%C3%A9sum%C3%A9_PDF-bd5fff?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&labelColor=0d1117" alt="Resume"/></a>
-  <br/><br/>
-  <img src="https://img.shields.io/github/followers/siddhant-pardeshi?label=FOLLOW&style=for-the-badge&color=00e5ff&labelColor=0d1117&logo=github" alt="followers"/>
-  <img src="https://img.shields.io/github/stars/siddhant-pardeshi?affiliations=OWNER&label=STARS&style=for-the-badge&color=ffd166&labelColor=0d1117" alt="stars"/>
+  <br/>
+  <img src="assets/svg/channel-banner.svg" width="100%" alt="Open channel — animated signal banner: radar ping, signal bars, rising particles"/>
   <br/><br/>
   ⭐️ Star the repos you find useful — every signal counts.
 </div>
