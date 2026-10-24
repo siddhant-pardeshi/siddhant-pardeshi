@@ -49,8 +49,8 @@
   <clipPath id="c8"><rect x="44" y="317" width="0" height="30"><animate attributeName="width" from="0" to="640" dur="0.7s" begin="8.8s" fill="freeze"/></rect></clipPath>
   <text x="68" y="341" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#8affc1" clip-path="url(#c8)">[✓] NPTEL (IIT Kharagpur) Elite · AWS Cloud Practitioner</text>
 
-  <clipPath id="c9"><rect x="44" y="350" width="0" height="30"><animate attributeName="width" from="0" to="680" dur="0.7s" begin="9.7s" fill="freeze"/></rect></clipPath>
-  <text x="68" y="374" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#8affc1" clip-path="url(#c9)">[✓] Hackathons — FUSION 2026 · FlytBase THC · UI-Testing Award</text>
+  <clipPath id="c9"><rect x="44" y="350" width="0" height="30"><animate attributeName="width" from="0" to="710" dur="0.7s" begin="9.7s" fill="freeze"/></rect></clipPath>
+  <text x="68" y="374" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#8affc1" clip-path="url(#c9)">[✓] Hackathons — DevDay Exchange 4th · FUSION 2026 · FlytBase THC</text>
 
   <!-- L10 : final prompt + blinking cursor -->
   <text x="48" y="424" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="19" fill="#39ff14">$</text>

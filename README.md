@@ -6,7 +6,7 @@
 <div align="center">
   <img src="assets/svg/header-banner.svg" width="100%" alt="SIDDHANT PARDESHI — Software Developer · Java · Spring Boot · MySQL · AWS · React"/>
   <br/><br/>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=850&color=00E5FF&center=true&vCenter=true&width=780&height=44&lines=Building+back-ends+with+Java+%C2%B7+Spring+Boot+%C2%B7+MySQL;GATE+2025+Qualified+%C2%B7+CGPA+8.13%2F10;18%2B+REST+APIs+%C2%B7+Layered+Architecture+%C2%B7+React+UIs;Open+to+Software+Developer+roles" alt="rotating taglines"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=850&color=00E5FF&center=true&vCenter=true&width=780&height=44&lines=MetroMind+%E2%80%94+4th+Place+%C2%B7+Metro+Hackathon+Pune;Building+back-ends+with+Java+%C2%B7+Spring+Boot+%C2%B7+MySQL;GATE+2025+Qualified+%C2%B7+CGPA+8.13%2F10;18%2B+REST+APIs+%C2%B7+Layered+Architecture+%C2%B7+React+UIs;Open+to+Software+Developer+roles" alt="rotating taglines"/></a>
   <br/><br/>
   <a href="https://linkedin.com/in/siddhant-pardeshi-53788221a"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"/></a>
   <a href="mailto:siddhantpardeshi307@gmail.com"><img src="https://img.shields.io/badge/Gmail-Transmit-ff2e97?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
@@ -42,13 +42,17 @@ signal:
     First Class with Distinction
   - NPTEL (IIT Kharagpur) Elite — Programming in Java
   - AWS Cloud Practitioner Essentials certified
-  - multi-hackathon veteran (FUSION 2026 · FlytBase · Hacktoberfest)
+  - multi-hackathon veteran (DevDay Exchange · FUSION 2026 · FlytBase)
+  - latest win: MetroMind — top-10 finalist · 4th place overall,
+    DevDay Exchange Metro Hackathon Pune (Team UrbanSync)
 ```
 
 </td>
 <td valign="top" width="42%">
 
 **🧭 LIVE TELEMETRY**
+
+`▸ LATEST WIN` — **MetroMind** · 4th place overall · DevDay Exchange Metro Hackathon Pune 🏆
 
 `▸ GATE SCORE` — **370 / 1000** · AIR **18571** (170,825 candidates)
 
@@ -72,6 +76,18 @@ signal:
 
 <div align="center">
   <img src="assets/svg/terminal-card.svg" width="660" alt="Animated terminal typing Siddhant's developer profile"/>
+</div>
+
+<div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
+
+## 🏆 LATEST_WIN — DEVDAY_EXCHANGE
+
+<div align="center">
+<a href="https://github.com/Arya-jannawar/MetroMind">
+  <img src="assets/svg/trophy-reward-card.svg" width="760" alt="Reward card — TOP 10 FINALIST · 4TH PLACE OVERALL at DevDay Exchange Metro Hackathon Pune — MetroMind, Team UrbanSync"/>
+</a>
+<br/>
+<sub>`2026-10-24` · built in one day on board the Aqua Line — <b>MetroMind</b>, an AI commute copilot for the Pune Metro · full build: <a href="https://github.com/Arya-jannawar/MetroMind">Arya-jannawar/MetroMind</a></sub>
 </div>
 
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
@@ -114,6 +130,19 @@ signal:
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
 
 ## 🚀 FEATURED_MISSIONS
+
+### ⬢ MetroMind — AI Commute Copilot for the Pune Metro 🏆 TOP-10 · 4TH PLACE
+`TypeScript` `Next.js` `React` `Zustand` `Dijkstra Routing` `Vitest`
+
+- 🚇 Built in one day on board the Pune Metro at **OpenAI DevDay Exchange (Codex Dayline)** — constraint-aware journey planning, live crowd intelligence (CrowdCast), safety triage grid, multilingual first-rider guide
+- 🧠 Pure-TS engine: Dijkstra routing with per-leg crowd forecasts, fares and a plain-language *why* for every plan — covered by 34 vitest tests
+- 🏆 **Shortlisted to the top 10 — finished 4th place overall** (Urban Mobility track)
+
+<a href="https://github.com/Arya-jannawar/MetroMind"><img src="https://img.shields.io/badge/OPEN_SOURCE_CODE-bd5fff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="MetroMind source"/></a>
+
+<div align="center">
+<a href="https://github.com/Arya-jannawar/MetroMind"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Arya-jannawar&repo=MetroMind&theme=tokyonight&hide_border=true&bg_color=00000000" width="60%" alt="MetroMind repo card"/></a>
+</div>
 
 <div align="center">
 <table>
@@ -300,6 +329,7 @@ signal:
 ## 🏆 ACHIEVEMENT_LOG
 
 ```diff
++ 🚇 MetroMind @ DevDay Exchange Metro Hackathon Pune — TOP-10 FINALIST · 4TH PLACE OVERALL
 + 🥇 GATE 2025 Qualified — Computer Science & IT (Score 370 · AIR 18571)
 + 🌍 FUSION 2026 International Hackathon — Participant, Certificate of Achievement (SKNCOE)
 + 🤖 FlytBase Tireless Hand Challenge — Certificate of Participation (Sept 2026)
