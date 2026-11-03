@@ -112,18 +112,17 @@ signal:
 <div align="center">
 <table>
 <tr>
-<td width="33.3%"><img src="https://github-readme-stats.vercel.app/api?username=siddhant-pardeshi&show_icons=true&hide_border=true&bg_color=00000000&title_color=00e5ff&icon_color=bd5fff&text_color=c9d1d9&ring_color=00e5ff" width="100%" alt="GitHub stats"/></td>
+<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=siddhant-pardeshi&theme=2077&animation=rgb&duration=4" width="100%" alt="GitHub stats"/></td>
 <td width="33.3%"><img src="https://streak-stats.demolab.com?user=siddhant-pardeshi&hide_border=true&background=00000000&ring=00e5ff&fire=ff2e97&currStreakLabel=00e5ff&sideLabels=c9d1d9&currStreakNum=ffffff&dates=8b949e" width="100%" alt="GitHub streak"/></td>
-<td width="33.3%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siddhant-pardeshi&layout=compact&hide_border=true&bg_color=00000000&title_color=00e5ff&text_color=c9d1d9&exclude_repo=asset-intelligence-copilot,HospitalShield-AI,flytbase-ahc-agentic-testing,Recycle_website,Womens_Day_Website,React_IPLproject,PortfolioWebsite,90DaysOfDevOps&hide=html,css&langs_count=8" width="100%" alt="Top languages"/></td>
+<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Most committed languages donut chart"/></td>
 </tr>
 </table>
 <br/>
 
 <table>
 <tr>
-<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Repos per language donut chart"/></td>
-<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Most committed languages donut chart"/></td>
-<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=siddhant-pardeshi&theme=2077&utcOffset=8&animation=load&duration=4" width="100%" alt="Productive time radial clock"/></td>
+<td width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Repos per language donut chart"/></td>
+<td width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=siddhant-pardeshi&theme=2077&utcOffset=8&animation=load&duration=4" width="100%" alt="Productive time radial clock"/></td>
 </tr>
 </table>
 </div>
