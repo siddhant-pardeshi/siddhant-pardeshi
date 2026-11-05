@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430" role="img" aria-label="Skill constellation — Java core with orbiting technologies: Spring Boot, React, MySQL, AWS, Git, VS Code">
+  <defs>
+    <linearGradient id="obg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#0a0f1e"/>
+      <stop offset="1" stop-color="#05070d"/>
+    </linearGradient>
+    <radialGradient id="sunGrad" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0" stop-color="#ffd08a"/>
+      <stop offset="0.45" stop-color="#f89820"/>
+      <stop offset="1" stop-color="#c2571a"/>
+    </radialGradient>
+    <linearGradient id="ocglint" x1="0" y1="0" x2="0.3" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#bfefff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="osoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <pattern id="odots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#243049"/>
+    </pattern>
+  </defs>
+
+  <!-- panel -->
+  <rect x="20" y="20" width="1460" height="390" rx="20" fill="url(#obg)"/>
+  <rect x="20" y="20" width="1460" height="390" rx="20" fill="url(#odots)" opacity="0.5"/>
+  <rect x="20" y="20" width="1460" height="390" rx="20" fill="none" stroke="#1c2a44" stroke-width="1.6"/>
+  <g stroke="#00e5ff" stroke-width="2.6" fill="none" opacity="0.9">
+    <path d="M 44 64 L 44 42 L 66 42"/>
+    <path d="M 1434 42 L 1456 42 L 1456 64"/>
+    <path d="M 44 366 L 44 388 L 66 388"/>
+    <path d="M 1434 388 L 1456 388 L 1456 366"/>
+  </g>
+
+  <!-- glint sweep -->
+  <rect x="-300" y="20" width="260" height="390" fill="url(#ocglint)">
+    <animate attributeName="x" values="-300;1500" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- star field (twinkling) -->
+  <g fill="#9fd8ff">
+    <circle cx="180" cy="90" r="1.6"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1360" cy="70" r="1.3"><animate attributeName="opacity" values="1;0.1;1" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="1240" cy="330" r="1.8"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="350" r="1.4"><animate attributeName="opacity" values="0.9;0.15;0.9" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="60" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="390" r="1.5"><animate attributeName="opacity" values="1;0.2;1" dur="3.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- comet flyby -->
+  <g opacity="0">
+    <line x1="-60" y1="120" x2="0" y2="96" stroke="#7ee0ff" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <circle r="3.4" fill="#dff6ff" cx="-60" cy="120">
+      <animate attributeName="cx" values="-80;1580" dur="9.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="330;60" dur="9.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="-60" y1="120" x2="-38" y2="111" stroke="#7ee0ff" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="x1" values="-102;1420" dur="9.5s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="339;69" dur="9.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="-80;1580" dur="9.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="330;60" dur="9.5s" repeatCount="indefinite"/>
+    </line>
+    <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.9;1" dur="9.5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- orbit rings (counter-rotating dashes) -->
+  <g fill="none" stroke="#2c3e63" stroke-width="1.4">
+    <circle cx="750" cy="200" r="95" stroke-dasharray="5 9">
+      <animateTransform attributeName="transform" type="rotate" from="360 750 200" to="0 750 200" dur="60s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="200" r="150" stroke-dasharray="5 9">
+      <animateTransform attributeName="transform" type="rotate" from="0 750 200" to="360 750 200" dur="80s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="200" r="205" stroke-dasharray="5 9">
+      <animateTransform attributeName="transform" type="rotate" from="360 750 200" to="0 750 200" dur="100s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- inner orbit: Spring Boot + React (14s) -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 750 200" to="360 750 200" dur="14s" repeatCount="indefinite"/>
+    <g transform="rotate(20 750 200)">
+      <circle cx="845" cy="200" r="13" fill="#6db33f" filter="url(#osoft)" opacity="0.6"/>
+      <circle cx="845" cy="200" r="9" fill="#6db33f"/>
+      <circle cx="831" cy="200" r="3.2" fill="#6db33f" opacity="0.45"/>
+    </g>
+    <g transform="rotate(200 750 200)">
+      <circle cx="845" cy="200" r="11" fill="#61dafb" filter="url(#osoft)" opacity="0.6"/>
+      <circle cx="845" cy="200" r="8" fill="#61dafb"/>
+      <circle cx="832" cy="200" r="2.8" fill="#61dafb" opacity="0.45"/>
+    </g>
+  </g>
+
+  <!-- middle orbit: MySQL + AWS (23s, reverse) -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="360 750 200" to="0 750 200" dur="23s" repeatCount="indefinite"/>
+    <g transform="rotate(120 750 200)">
+      <circle cx="900" cy="200" r="14" fill="#00b4d8" filter="url(#osoft)" opacity="0.6"/>
+      <circle cx="900" cy="200" r="10" fill="#0ea5c9"/>
+      <circle cx="882" cy="200" r="3.4" fill="#0ea5c9" opacity="0.45"/>
+    </g>
+    <g transform="rotate(300 750 200)">
+      <circle cx="900" cy="200" r="13" fill="#ff9900" filter="url(#osoft)" opacity="0.6"/>
+      <circle cx="900" cy="200" r="9.5" fill="#ff9900"/>
+      <circle cx="883" cy="200" r="3.2" fill="#ff9900" opacity="0.45"/>
+    </g>
+  </g>
+
+  <!-- outer orbit: Git + SQL (35s) -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 750 200" to="360 750 200" dur="35s" repeatCount="indefinite"/>
+    <g transform="rotate(70 750 200)">
+      <circle cx="955" cy="200" r="11" fill="#f0533b" filter="url(#osoft)" opacity="0.55"/>
+      <circle cx="955" cy="200" r="8" fill="#f0533b"/>
+      <circle cx="938" cy="200" r="2.8" fill="#f0533b" opacity="0.4"/>
+    </g>
+    <g transform="rotate(250 750 200)">
+      <circle cx="955" cy="200" r="10" fill="#39ff14" filter="url(#osoft)" opacity="0.55"/>
+      <circle cx="955" cy="200" r="7" fill="#39ff14"/>
+      <circle cx="940" cy="200" r="2.6" fill="#39ff14" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- JAVA sun -->
+  <circle cx="750" cy="200" r="60" fill="#f89820" opacity="0.16" filter="url(#osoft)">
+    <animate attributeName="r" values="56;68;56" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="200" r="42" fill="url(#sunGrad)" stroke="#ffd08a" stroke-width="1.6"/>
+  <text x="750" y="207" text-anchor="middle" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-weight="bold" font-size="21" letter-spacing="2" fill="#1a0e00">JAVA</text>
+
+  <!-- legend -->
+  <g font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="14" letter-spacing="1">
+    <circle cx="430" cy="392" r="5" fill="#f89820"/><text x="443" y="397" fill="#c9d1d9">JAVA CORE</text>
+    <circle cx="575" cy="392" r="5" fill="#6db33f"/><text x="588" y="397" fill="#c9d1d9">SPRING BOOT</text>
+    <circle cx="725" cy="392" r="5" fill="#61dafb"/><text x="738" y="397" fill="#c9d1d9">REACT</text>
+    <circle cx="830" cy="392" r="5" fill="#0ea5c9"/><text x="843" y="397" fill="#c9d1d9">MYSQL</text>
+    <circle cx="930" cy="392" r="5" fill="#ff9900"/><text x="943" y="397" fill="#c9d1d9">AWS</text>
+    <circle cx="1010" cy="392" r="5" fill="#f0533b"/><text x="1023" y="397" fill="#c9d1d9">GIT</text>
+    <circle cx="1080" cy="392" r="5" fill="#39ff14"/><text x="1093" y="397" fill="#c9d1d9">SQL</text>
+  </g>
+
+  <!-- heading tag -->
+  <text x="750" y="66" text-anchor="middle" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="17" letter-spacing="5" fill="#7ee0ff">
+    SKILL CONSTELLATION — EVERYTHING ORBITS JAVA
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.4s" repeatCount="indefinite"/>
+  </text>
+</svg>

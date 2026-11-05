@@ -76,6 +76,8 @@ signal:
 </table>
 
 <div align="center">
+  <img src="assets/svg/gauges.svg" width="100%" alt="Mission telemetry gauges — animated sweeps for CGPA 8.13/10, GATE score 370, 18+ REST APIs shipped"/>
+  <br/><br/>
   <img src="assets/svg/terminal-card.svg" width="660" alt="Animated terminal typing Siddhant's developer profile"/>
 </div>
 
@@ -96,6 +98,8 @@ signal:
 ## ⚔️ TECH_ARSENAL
 
 <div align="center">
+  <img src="assets/svg/skill-orbit.svg" width="100%" alt="Skill constellation — Java core with orbiting Spring Boot, React, MySQL, AWS, Git and SQL planets"/>
+  <br/><br/>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=java,spring,react,mysql,amazonwebservices,git,github&perline=7" alt="Java, Spring, React, MySQL, AWS, Git, GitHub"/></a>
   <br/>
   <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=c,cpp,js,html,css,bootstrap,vscode&perline=7" alt="C, C++, JavaScript, HTML5, CSS3, Bootstrap, VS Code"/></a>
@@ -141,14 +145,14 @@ signal:
 <a href="https://github.com/Arya-jannawar/MetroMind"><img src="https://img.shields.io/badge/OPEN_SOURCE_CODE-bd5fff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="MetroMind source"/></a>
 
 <div align="center">
-<a href="https://github.com/Arya-jannawar/MetroMind"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Arya-jannawar&repo=MetroMind&theme=tokyonight&hide_border=true&bg_color=00000000" width="60%" alt="MetroMind repo card"/></a>
+<a href="https://github.com/Arya-jannawar/MetroMind"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=Arya-jannawar&repo=MetroMind&theme=tokyonight&hide_border=true&bg_color=00000000" width="60%" alt="MetroMind repo card"/></a>
 </div>
 
 <div align="center">
 <table>
 <tr>
-<td width="50%"><a href="https://github.com/siddhant-pardeshi/BankNest"><img src="https://github-readme-stats.vercel.app/api/pin/?username=siddhant-pardeshi&repo=BankNest&theme=tokyonight&hide_border=true&bg_color=00000000" width="100%" alt="BankNest repo card"/></a></td>
-<td width="50%"><a href="https://github.com/siddhant-pardeshi/BloodDonation-Management"><img src="https://github-readme-stats.vercel.app/api/pin/?username=siddhant-pardeshi&repo=BloodDonation-Management&theme=tokyonight&hide_border=true&bg_color=00000000" width="100%" alt="BloodDonation-Management repo card"/></a></td>
+<td width="50%"><a href="https://github.com/siddhant-pardeshi/BankNest"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=siddhant-pardeshi&repo=BankNest&theme=tokyonight&hide_border=true&bg_color=00000000" width="100%" alt="BankNest repo card"/></a></td>
+<td width="50%"><a href="https://github.com/siddhant-pardeshi/BloodDonation-Management"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=siddhant-pardeshi&repo=BloodDonation-Management&theme=tokyonight&hide_border=true&bg_color=00000000" width="100%" alt="BloodDonation-Management repo card"/></a></td>
 </tr>
 </table>
 </div>
