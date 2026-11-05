@@ -27,3 +27,20 @@ jobs:
           EXCLUDE_REPOS: "asset-intelligence-copilot,HospitalShield-AI,flytbase-ahc-agentic-testing,Recycle_website,Womens_Day_Website,React_IPLproject,PortfolioWebsite,90DaysOfDevOps"
           ANIMATION: "draw"
           DURATION: "6"
+
+      - name: Refresh self-hosted repo pin cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          python3 scripts/render_pins.py
+          git add assets/pins
+          if git diff --cached --quiet; then
+            echo "pins unchanged"
+          else
+            git commit -m "chore: refresh repo pin cards"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PINS: "siddhant-pardeshi/BankNest,siddhant-pardeshi/BloodDonation-Management,Arya-jannawar/MetroMind"

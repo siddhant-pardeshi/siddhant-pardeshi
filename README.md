@@ -116,17 +116,17 @@ signal:
 <div align="center">
 <table>
 <tr>
-<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=siddhant-pardeshi&theme=2077&animation=rgb&duration=4" width="100%" alt="GitHub stats"/></td>
+<td width="33.3%"><img src="profile-summary-card-output/2077/3-stats.svg" width="100%" alt="GitHub stats"/></td>
 <td width="33.3%"><img src="https://streak-stats.demolab.com?user=siddhant-pardeshi&hide_border=true&background=00000000&ring=00e5ff&fire=ff2e97&currStreakLabel=00e5ff&sideLabels=c9d1d9&currStreakNum=ffffff&dates=8b949e" width="100%" alt="GitHub streak"/></td>
-<td width="33.3%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Most committed languages donut chart"/></td>
+<td width="33.3%"><img src="profile-summary-card-output/2077/2-most-commit-language.svg" width="100%" alt="Most committed languages donut chart"/></td>
 </tr>
 </table>
 <br/>
 
 <table>
 <tr>
-<td width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=siddhant-pardeshi&theme=2077&exclude=repo,python,html,css&animation=draw&duration=6" width="100%" alt="Repos per language donut chart"/></td>
-<td width="50%"><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=siddhant-pardeshi&theme=2077&utcOffset=8&animation=load&duration=4" width="100%" alt="Productive time radial clock"/></td>
+<td width="50%"><img src="profile-summary-card-output/2077/1-repos-per-language.svg" width="100%" alt="Repos per language donut chart"/></td>
+<td width="50%"><img src="profile-summary-card-output/2077/4-productive-time.svg" width="100%" alt="Productive time radial clock"/></td>
 </tr>
 </table>
 </div>
@@ -374,7 +374,7 @@ signal:
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00e5ff,50:bd5fff,100:ff2e97&height=110&section=footer&reversal=false" width="100%" alt="animated wave footer"/>
+  <img src="assets/svg/footer-wave.svg" width="100%" alt="animated wave footer"/>
 </div>
 
 <!-- © 2026 · Siddhant Pardeshi · Neon-HUD v2 -->
