@@ -38,6 +38,10 @@ def fetch(repo: str) -> dict:
         return json.load(r)
 
 
+def esc(s: str) -> str:
+    return html.escape(s, quote=True)
+
+
 def render(repo: str, data: dict) -> str:
     owner, name = repo.split("/", 1)
     lang = data.get("language") or "Code"
