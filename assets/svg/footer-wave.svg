@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="120" viewBox="0 0 1500 120" role="img" aria-label="Animated gradient wave footer">
+  <defs>
+    <linearGradient id="wgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#bd5fff"/>
+      <stop offset="1" stop-color="#ff2e97"/>
+    </linearGradient>
+    <linearGradient id="wgrad2" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#7cc7ff"/>
+      <stop offset="1" stop-color="#bd5fff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- back wave (soft, slower, counter-phase) -->
+  <path fill="url(#wgrad2)" opacity="0.35">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite"
+      values="M0,70 C250,40 500,95 750,62 C1000,32 1250,88 1500,55 L1500,120 L0,120 Z;
+              M0,70 C250,92 500,38 750,66 C1000,90 1250,34 1500,55 L1500,120 L0,120 Z;
+              M0,70 C250,40 500,95 750,62 C1000,32 1250,88 1500,55 L1500,120 L0,120 Z"/>
+  </path>
+
+  <!-- front wave -->
+  <path fill="url(#wgrad)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,62 C250,96 500,28 750,58 C1000,90 1250,30 1500,58 L1500,120 L0,120 Z;
+              M0,62 C250,30 500,92 750,56 C1000,26 1250,86 1500,58 L1500,120 L0,120 Z;
+              M0,62 C250,96 500,28 750,58 C1000,90 1250,30 1500,58 L1500,120 L0,120 Z"/>
+  </path>
+
+  <!-- crest highlight -->
+  <path fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.6">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,62 C250,96 500,28 750,58 C1000,90 1250,30 1500,58;
+              M0,62 C250,30 500,92 750,56 C1000,26 1250,86 1500,58;
+              M0,62 C250,96 500,28 750,58 C1000,90 1250,30 1500,58"/>
+  </path>
+</svg>

@@ -1,0 +1,29 @@
+name: Generate profile summary cards
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate cards (self-hosted, pushed to main)
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          THEME: 2077
+          UTC_OFFSET: "8"
+          EXCLUDE: "repo,python,html,css"
+          EXCLUDE_REPOS: "asset-intelligence-copilot,HospitalShield-AI,flytbase-ahc-agentic-testing,Recycle_website,Womens_Day_Website,React_IPLproject,PortfolioWebsite,90DaysOfDevOps"
+          ANIMATION: "draw"
+          DURATION: "6"
