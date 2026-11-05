@@ -145,14 +145,14 @@ signal:
 <a href="https://github.com/Arya-jannawar/MetroMind"><img src="https://img.shields.io/badge/OPEN_SOURCE_CODE-bd5fff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="MetroMind source"/></a>
 
 <div align="center">
-<a href="https://github.com/Arya-jannawar/MetroMind"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=Arya-jannawar&repo=MetroMind&theme=tokyonight&hide_border=true&bg_color=00000000" width="60%" alt="MetroMind repo card"/></a>
+<a href="https://github.com/Arya-jannawar/MetroMind"><img src="assets/pins/MetroMind.svg" width="60%" alt="MetroMind repo card"/></a>
 </div>
 
 <div align="center">
 <table>
 <tr>
-<td width="50%"><a href="https://github.com/siddhant-pardeshi/BankNest"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=siddhant-pardeshi&repo=BankNest&theme=tokyonight&hide_border=true&bg_color=00000000" width="100%" alt="BankNest repo card"/></a></td>
-<td width="50%"><a href="https://github.com/siddhant-pardeshi/BloodDonation-Management"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=siddhant-pardeshi&repo=BloodDonation-Management&theme=tokyonight&hide_border=true&bg_color=00000000" width="100%" alt="BloodDonation-Management repo card"/></a></td>
+<td width="50%"><a href="https://github.com/siddhant-pardeshi/BankNest"><img src="assets/pins/BankNest.svg" width="100%" alt="BankNest repo card"/></a></td>
+<td width="50%"><a href="https://github.com/siddhant-pardeshi/BloodDonation-Management"><img src="assets/pins/BloodDonation-Management.svg" width="100%" alt="BloodDonation-Management repo card"/></a></td>
 </tr>
 </table>
 </div>
