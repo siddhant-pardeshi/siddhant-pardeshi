@@ -80,6 +80,10 @@ signal:
 </table>
 
 <div align="center">
+  <img src="assets/svg/saga/hajime-banner.svg" width="100%" alt="Hajime Reforged cinematic banner — crimson energy, glitch bars, sparks and shockwaves around the art"/>
+</div>
+
+<div align="center">
   <img src="assets/svg/gauges.svg" width="100%" alt="Mission telemetry gauges — animated sweeps for CGPA 8.13/10, GATE score 370, 18+ REST APIs shipped"/>
   <br/><br/>
   <img src="assets/svg/terminal-card.svg" width="660" alt="Animated terminal typing Siddhant's developer profile"/>
@@ -340,18 +344,12 @@ signal:
 <i>every legend starts as a no-name — watch the arcs. <sub>(fan-art credits to the artists)</sub></i>
 </div>
 
-<div align="center">
-  <img src="assets/svg/saga/saga-solo.svg?v=2" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/>
-</div>
-
-<br/>
-
 <table>
 <tr>
 <td width="50%" align="center"><img src="assets/svg/saga/saga-naruto.svg?v=2" width="100%" alt="Naruto quest panel — golden chakra glow and rising embers around the ninja way"/></td>
+<td width="50%" align="center"><img src="assets/svg/saga/saga-solo.svg?v=2" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/></td>
 </tr>
 <tr>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-reforged.svg?v=2" width="100%" alt="Hajime quest panel — red energy pulse, glitch bars and sparks, from commonplace to world's strongest"/></td>
 <td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-lockon.svg?v=2" width="100%" alt="Hajime quest panel — muzzle flash, shockwave ring and embers, aim true"/></td>
 </tr>
 </table>

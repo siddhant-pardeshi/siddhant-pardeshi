@@ -109,7 +109,7 @@ def build_naruto() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{ix + iw//2}" cy="{iy + 170}" rx="230" ry="170" fill="url(#nzglow)">
     <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.4s" repeatCount="indefinite"/>
-  </ellipse>''' + img_block(data, iw, ih, ix, iy, "#ffb347") + tag(w, "ARC 01 — THE GRIND", "#ffb347") + embers("nz", w, h - 80, 120, 11, ["#ffd166", "#ffb347", "#ffe28a"], 1) + glint("nz", w, h) + caption(w, h, "THE NINJA WAY — grind in silence, shine in results", "#ffd166") + "\n</svg>\n"
+  </ellipse>''' + img_block(data, iw, ih, ix, iy, "#ffb347") + tag(w, "ARC 03 — THE GRIND", "#ffb347") + embers("nz", w, h - 80, 120, 11, ["#ffd166", "#ffb347", "#ffe28a"], 1) + glint("nz", w, h) + caption(w, h, "THE NINJA WAY — grind in silence, shine in results", "#ffd166") + "\n</svg>\n"
     write("saga-naruto.svg", svg)
 
 
@@ -356,10 +356,102 @@ def build_shield_banner() -> None:
     write("shield-hero-banner.svg", svg)
 
 
+
+# ──────────────── ARC 01 — HAJIME REFORGED cinematic banner (after overview) ────────────────
+def build_hajime_banner() -> None:
+    import math
+    data, iw, ih = b64(os.path.join(SRC, "Hajime_1.jpg"), 480)
+    w, h = 1500, 560
+    ix, iy = 90, 40
+    cx, cy = ix + iw // 2, iy + 240
+
+    panel_defs = PANEL_DEFS.format(pid="hb", bg1="#140508", bg2="#0d0b10", bg3="#070508", glow="#ff2e97")
+    extra_defs = (
+        '<linearGradient id="hbtitle" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#ff8fb3"/><stop offset="0.5" stop-color="#ff2e97"/>'
+        '<stop offset="1" stop-color="#ff6b6b"/></linearGradient>'
+        '<linearGradient id="hbrule" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#ff2e97"/><stop offset="0.8" stop-color="#ff2e97"/>'
+        '<stop offset="1" stop-color="#ff2e97" stop-opacity="0"/></linearGradient>'
+        '<filter id="hbsoft" x="-40%" y="-40%" width="180%" height="180%">'
+        '<feGaussianBlur stdDeviation="7"/></filter>'
+        f'<clipPath id="hbclip"><rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18"/></clipPath>'
+    )
+    head = f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Hajime Reforged cinematic banner - crimson energy, glitch bars and sparks around the art">'
+    defs = "<defs>" + panel_defs + extra_defs + "</defs>"
+
+    waves = ""
+    for bgn in (0, 1.3, 2.6):
+        waves += (
+            f'<circle cx="{cx}" cy="{cy}" r="70" fill="none" stroke="#ff4d6d" stroke-width="2.4" opacity="0">'
+            f'<animate attributeName="r" values="70;330" dur="4s" begin="{bgn}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="opacity" values="0.5;0" dur="4s" begin="{bgn}s" repeatCount="indefinite"/>'
+            f'</circle>'
+        )
+    slashes = ""
+    for i, (sx, sy, sl) in enumerate([(620, 120, 130), (700, 300, 170), (860, 420, 140)]):
+        slashes += (
+            f'<line x1="{sx}" y1="{sy}" x2="{sx + sl}" y2="{sy - sl // 3}" stroke="#ff2e97" stroke-width="4" '
+            f'stroke-linecap="round" stroke-dasharray="{sl + 20}" stroke-dashoffset="{sl + 20}" opacity="0">'
+            f'<animate attributeName="stroke-dashoffset" from="{sl + 20}" to="0" dur="0.5s" begin="{1.2 + i * 0.5}s" fill="freeze"/>'
+            f'<animate attributeName="opacity" values="0;0.9;0.75" keyTimes="0;0.3;1" dur="0.5s" begin="{1.2 + i * 0.5}s" fill="freeze"/>'
+            f'<animate attributeName="opacity" values="0.75;0.15;0.75" dur="2.6s" begin="{2 + i * 0.5}s" repeatCount="indefinite"/>'
+            f'</line>'
+        )
+
+    body = f'''
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18" fill="url(#hbbg)"/>
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18" fill="url(#hbdots)" opacity="0.5"/>
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18" fill="none" stroke="#1c2a44" stroke-width="1.5"/>
+  <g stroke="#ff2e97" stroke-width="2.4" fill="none" opacity="0.85">
+    <path d="M 38 52 L 38 36 L 54 36"/><path d="M {w-54} 36 L {w-38} 36 L {w-38} 52"/>
+    <path d="M 38 {h-52} L 38 {h-36} L 54 {h-36}"/><path d="M {w-54} {h-36} L {w-38} {h-36} L {w-38} {h-52}"/>
+  </g>
+  <g clip-path="url(#hbclip)">
+    <ellipse cx="{cx}" cy="{cy}" rx="340" ry="270" fill="url(#hbglow)">
+      <animate attributeName="opacity" values="0.55;0.95;0.55" dur="3.2s" repeatCount="indefinite"/>
+    </ellipse>
+    {waves}
+    {slashes}
+  </g>
+  <text x="560" y="120" font-family="{FONT}" font-size="15" letter-spacing="4" fill="#ff6b9d" opacity="0.9">ARC 01 — THE REFORGING</text>
+  <text x="558" y="215" font-family="{FONT}" font-weight="bold" font-size="80" letter-spacing="10" fill="#ff2e97" opacity="0.4" filter="url(#hbsoft)">REFORGED</text>
+  <text x="558" y="215" font-family="{FONT}" font-weight="bold" font-size="80" letter-spacing="10" fill="url(#hbtitle)">REFORGED</text>
+  <rect x="562" y="244" width="700" height="2.4" fill="url(#hbrule)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="562" y="292" font-family="{FONT}" font-size="21" letter-spacing="3" fill="#ffb3c6">FROM COMMONPLACE TO WORLD'S STRONGEST</text>
+  <text x="562" y="500" font-family="{FONT}" font-size="16" fill="#c9d1d9"><tspan fill="#ff2e97">&#8250;</tspan> reforged: <tspan fill="#7ee0ff">fresh graduate</tspan> → battle-tested builder, ship-ready today</text>
+  <text x="562" y="528" font-family="{FONT}" font-size="16" fill="#c9d1d9"><tspan fill="#ff2e97">&#8250;</tspan> arsenal: <tspan fill="#7ee0ff">18+ REST APIs</tspan> · 4 hackathons · 12 certifications</text>'''
+
+    glitch = ""
+    for gy, gc, wd in [(190, "#ff2e97", 300), (330, "#61dafb", 240), (430, "#ffffff", 200)]:
+        glitch += (
+            f'<rect x="560" y="{gy}" width="{wd}" height="6" fill="{gc}" opacity="0">'
+            f'<animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.6;0.64;0.68;1" dur="4.4s" repeatCount="indefinite"/>'
+            f'<animate attributeName="x" values="560;584;552;560" dur="0.22s" repeatCount="indefinite"/>'
+            f'</rect>'
+        )
+
+    svg = head + defs + body + glitch
+    svg += img_block(data, iw, ih, ix, iy, "#ff2e97")
+    svg += f'''
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" fill="#ff0033" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.09;0;0;0.05;0" keyTimes="0;0.48;0.51;0.54;0.85;0.88;1" dur="6.2s" repeatCount="indefinite"/>
+  </rect>'''
+    svg += embers("hb", w, h - 40, 60, 14, ["#ff2e97", "#ff4d6d", "#ffd166"], 7) + glint("hb", w, h)
+    svg += f'''
+  <rect x="21" y="30" width="{w-42}" height="1.5" fill="#ff2e97" opacity="0.16">
+    <animate attributeName="y" values="30;{h-32};30" dur="8.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>'''
+    write("hajime-banner.svg", svg)
+
+
 if __name__ == "__main__":
     build_naruto()
     build_solo()
     build_shield()
-    build_hajime_red()
     build_hajime_aim()
     build_shield_banner()
+    build_hajime_banner()
