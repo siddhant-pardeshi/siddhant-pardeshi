@@ -346,15 +346,15 @@ signal:
 
 <table>
 <tr>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-naruto.svg?v=2" width="100%" alt="Naruto quest panel — golden chakra glow and rising embers around the ninja way"/></td>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-solo.svg?v=2" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/></td>
-</tr>
-<tr>
+<td width="50%" align="center"><img src="assets/svg/saga/saga-solo.svg?v=3" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/></td>
 <td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-lockon.svg?v=2" width="100%" alt="Hajime quest panel — muzzle flash, shockwave ring and embers, aim true"/></td>
-</tr>
 </table>
 
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
+
+<div align="center">
+  <img src="assets/svg/naruto-banner.svg" width="100%" alt="Naruto cinematic banner — rasengan orb, falling gold sparks, chakra glow and smoke around the grind"/>
+</div>
 
 ## 🏆 ACHIEVEMENT_LOG
 
