@@ -337,19 +337,19 @@ signal:
 </div>
 
 <div align="center">
-  <img src="assets/svg/saga/saga-solo.svg" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/>
+  <img src="assets/svg/saga/saga-solo.svg?v=2" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/>
 </div>
 
 <br/>
 
 <table>
 <tr>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-naruto.svg" width="100%" alt="Naruto quest panel — golden chakra glow and rising embers around the ninja way"/></td>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-shield.svg" width="100%" alt="Shield Hero quest panel — rotating gold rune rings and particles behind the shield"/></td>
+<td width="50%" align="center"><img src="assets/svg/saga/saga-naruto.svg?v=2" width="100%" alt="Naruto quest panel — golden chakra glow and rising embers around the ninja way"/></td>
+<td width="50%" align="center"><img src="assets/svg/saga/saga-shield.svg?v=2" width="100%" alt="Shield Hero quest panel — rotating gold rune rings and particles behind the shield"/></td>
 </tr>
 <tr>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-reforged.svg" width="100%" alt="Hajime quest panel — red energy pulse, glitch bars and sparks, from commonplace to world's strongest"/></td>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-lockon.svg" width="100%" alt="Hajime quest panel — muzzle flash, shockwave ring and embers, aim true"/></td>
+<td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-reforged.svg?v=2" width="100%" alt="Hajime quest panel — red energy pulse, glitch bars and sparks, from commonplace to world's strongest"/></td>
+<td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-lockon.svg?v=2" width="100%" alt="Hajime quest panel — muzzle flash, shockwave ring and embers, aim true"/></td>
 </tr>
 </table>
 
