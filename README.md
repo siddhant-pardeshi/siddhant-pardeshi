@@ -4,13 +4,7 @@
      ══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="assets/svg/page-forge.svg" width="100%" alt="Signature build: six robot cursors (Scout, Layout, Typeset, Motion, QA, Deploy) forge the profile live — wireframes, typing, pops, deploy stamp. Refresh to replay"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="assets/svg/header-banner.svg?v=2" width="100%" alt="SIDDHANT PARDESHI — Software Developer · Java · Spring Boot · MySQL · AWS · React"/>
+  <img src="assets/svg/header-banner.svg?v=3" width="100%" alt="SIDDHANT PARDESHI — Software Developer · Java · Spring Boot · MySQL · AWS · React"/>
   <br/><br/>
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=850&color=00E5FF&center=true&vCenter=true&width=780&height=44&lines=MetroMind+%E2%80%94+4th+Place+%C2%B7+Metro+Hackathon+Pune;Building+back-ends+with+Java+%C2%B7+Spring+Boot+%C2%B7+MySQL;GATE+2025+Qualified+%C2%B7+CGPA+8.13%2F10;18%2B+REST+APIs+%C2%B7+Layered+Architecture+%C2%B7+React+UIs;Open+to+Software+Developer+roles" alt="rotating taglines"/></a>
   <br/><br/>
