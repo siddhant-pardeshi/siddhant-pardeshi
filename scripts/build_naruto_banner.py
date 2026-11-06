@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Naruto cinematic banner (ARC 02 — THE GRIND) for the hero slot
+"""Build the Naruto cinematic banner (ARC 04 — THE GRIND) for the hero slot
 in front of ACHIEVEMENT_LOG. Reuses helpers from build_saga."""
 import math
 import os
@@ -79,7 +79,7 @@ def build_naruto_banner() -> None:
     {falling}
     {smoke}
   </g>
-  <text x="90" y="120" font-family="{FONT}" font-size="15" letter-spacing="4" fill="#ffb347" opacity="0.9">ARC 02 — THE GRIND</text>
+  <text x="90" y="120" font-family="{FONT}" font-size="15" letter-spacing="4" fill="#ffb347" opacity="0.9">ARC 04 — THE GRIND</text>
   <text x="88" y="212" font-family="{FONT}" font-weight="bold" font-size="76" letter-spacing="8" fill="#ffb347" opacity="0.4" filter="url(#nbsoft)">THE GRIND</text>
   <text x="88" y="212" font-family="{FONT}" font-weight="bold" font-size="76" letter-spacing="8" fill="url(#nbtitle)">THE GRIND</text>
   <rect x="92" y="240" width="560" height="2.4" fill="url(#nbrule)">
