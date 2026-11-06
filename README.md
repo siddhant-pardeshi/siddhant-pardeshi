@@ -117,6 +117,10 @@ signal:
   </marquee>
 </div>
 
+<div align="center">
+  <img src="assets/svg/saga/hajime-lockon-banner.svg" width="100%" alt="Hajime Lock On cinematic banner — targeting reticle, muzzle flash strobe and shockwaves"/>
+</div>
+
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
 
 ## 📊 GITHUB_TELEMETRY
@@ -344,16 +348,14 @@ signal:
 <i>every legend starts as a no-name — watch the arcs. <sub>(fan-art credits to the artists)</sub></i>
 </div>
 
-<table>
-<tr>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-solo.svg?v=3" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/></td>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-lockon.svg?v=2" width="100%" alt="Hajime quest panel — muzzle flash, shockwave ring and embers, aim true"/></td>
-</table>
+<div align="center">
+  <img src="assets/svg/saga/saga-solo.svg?v=3" width="100%" alt="Solo Leveling quest panel — SYSTEM window typing level-ups beside the shadow monarch, purple flames and lightning"/>
+</div>
 
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
 
 <div align="center">
-  <img src="assets/svg/saga/naruto-banner.svg" width="100%" alt="Naruto cinematic banner — rasengan orb, falling gold sparks, chakra glow and smoke around the grind"/>
+  <img src="assets/svg/saga/naruto-banner.svg?v=3" width="100%" alt="Naruto cinematic banner — rasengan orb, falling gold sparks, chakra glow and smoke around the grind"/>
 </div>
 
 ## 🏆 ACHIEVEMENT_LOG
