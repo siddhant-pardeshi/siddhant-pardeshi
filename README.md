@@ -17,6 +17,10 @@
   <img src="https://img.shields.io/badge/MISSION-OPEN%20TO%20OPPORTUNITIES-39ff14?style=flat-square&labelColor=0d1117" alt="open to opportunities"/> <img src="https://img.shields.io/badge/BASE-PUNE%2C%20INDIA-67e8f9?style=flat-square&labelColor=0d1117" alt="Pune, India"/> <img src="https://img.shields.io/badge/STATUS-SCROLL%20FOR%20CERTIFICATES%20%E2%AC%87-ffd166?style=flat-square&labelColor=0d1117" alt="scroll for certificates"/>
 </div>
 
+<div align="center">
+  <img src="assets/svg/saga/shield-hero-banner.svg" width="100%" alt="Shield Hero cinematic banner — rotating rune circles, expanding shockwaves, god-rays and the defender's oath"/>
+</div>
+
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
 
 ## ⚡ SYSTEM_OVERVIEW
@@ -345,7 +349,6 @@ signal:
 <table>
 <tr>
 <td width="50%" align="center"><img src="assets/svg/saga/saga-naruto.svg?v=2" width="100%" alt="Naruto quest panel — golden chakra glow and rising embers around the ninja way"/></td>
-<td width="50%" align="center"><img src="assets/svg/saga/saga-shield.svg?v=2" width="100%" alt="Shield Hero quest panel — rotating gold rune rings and particles behind the shield"/></td>
 </tr>
 <tr>
 <td width="50%" align="center"><img src="assets/svg/saga/saga-hajime-reforged.svg?v=2" width="100%" alt="Hajime quest panel — red energy pulse, glitch bars and sparks, from commonplace to world's strongest"/></td>
