@@ -208,7 +208,7 @@ def build_hajime_red() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{ix + iw//2}" cy="{iy + 280}" rx="260" ry="220" fill="url(#hjglow)">
     <animate attributeName="opacity" values="0.4;0.75;0.4" dur="2.9s" repeatCount="indefinite"/>
-  </ellipse>''' + shake + sparks + tag(w, "ARC 04 — REFORGED", "#ff2e97") + embers("hj", w, h - 80, 120, 8, ["#ff2e97", "#ff4d6d", "#ffd166"], 4) + glint("hj", w, h) + caption(w, h, "REFORGED — from commonplace to world's strongest", "#ff9ec7") + "\n</svg>\n"
+  </ellipse>''' + shake + sparks + tag(w, "ARC 03 — REFORGED", "#ff2e97") + embers("hj", w, h - 80, 120, 8, ["#ff2e97", "#ff4d6d", "#ffd166"], 4) + glint("hj", w, h) + caption(w, h, "REFORGED — from commonplace to world's strongest", "#ff9ec7") + "\n</svg>\n"
     write("saga-hajime-reforged.svg", svg)
 
 
@@ -237,7 +237,7 @@ def build_hajime_aim() -> None:
   <circle cx="{mx}" cy="{my}" r="12" fill="none" stroke="#ff2e97" stroke-width="2" opacity="0">
     <animate attributeName="r" values="10;66" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.85;0" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
-  </circle>''' + tag(w, "ARC 05 — LOCK ON", "#ff2e97") + embers("ha", w, h - 80, 120, 9, ["#ff2e97", "#ff6b9d", "#ffd166"], 5) + glint("ha", w, h) + caption(w, h, "AIM TRUE — 18+ REST APIs &#183; 4 hackathons &#183; 12 certs", "#ff9ec7") + "\n</svg>\n"
+  </circle>''' + tag(w, "ARC 04 — LOCK ON", "#ff2e97") + embers("ha", w, h - 80, 120, 9, ["#ff2e97", "#ff6b9d", "#ffd166"], 5) + glint("ha", w, h) + caption(w, h, "AIM TRUE — 18+ REST APIs &#183; 4 hackathons &#183; 12 certs", "#ff9ec7") + "\n</svg>\n"
     write("saga-hajime-lockon.svg", svg)
 
 
@@ -253,9 +253,113 @@ def write(name: str, svg: str) -> None:
     print(f"{path}: {os.path.getsize(path) // 1024} KB")
 
 
+
+
+# ──────────────── ARC 00 — SHIELD HERO cinematic banner (hero slot) ────────────────
+def build_shield_banner() -> None:
+    import math
+    data, iw, ih = b64(os.path.join(SRC, "Shield_Hero.jpg"), 480)
+    w, h = 1500, 560
+    ix, iy = 1170, 40
+    cx, cy = ix + iw // 2, iy + 240
+
+    panel_defs = PANEL_DEFS.format(pid="sb", bg1="#0e130a", bg2="#0d1117", bg3="#05070d", glow="#ffd166")
+    extra_defs = (
+        '<linearGradient id="sbtitle" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#ffe28a"/><stop offset="0.5" stop-color="#ffd166"/>'
+        '<stop offset="1" stop-color="#fbbf24"/></linearGradient>'
+        '<linearGradient id="sbrule" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#00e5ff" stop-opacity="0"/>'
+        '<stop offset="0.2" stop-color="#00e5ff"/><stop offset="0.8" stop-color="#ff2e97"/>'
+        '<stop offset="1" stop-color="#ff2e97" stop-opacity="0"/></linearGradient>'
+        '<filter id="sbsoft" x="-40%" y="-40%" width="180%" height="180%">'
+        '<feGaussianBlur stdDeviation="7"/></filter>'
+        f'<clipPath id="sbclip"><rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18"/></clipPath>'
+    )
+    head = f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Shield Hero cinematic banner - rune circles, shockwaves and god-rays around the defender">'
+    defs = "<defs>" + panel_defs + extra_defs + "</defs>"
+
+    rays = ""
+    for k in range(8):
+        a = k * 45 * math.pi / 180
+        x2, y2 = cx + 620 * math.cos(a), cy + 620 * math.sin(a)
+        rays += f'<line x1="{cx}" y1="{cy}" x2="{x2:.0f}" y2="{y2:.0f}" stroke-width="30"/>'
+    waves = ""
+    for bgn in (0, 1.4, 2.8):
+        waves += (
+            f'<circle cx="{cx}" cy="{cy}" r="70" fill="none" stroke="#ffe28a" stroke-width="2.4" opacity="0">'
+            f'<animate attributeName="r" values="70;330" dur="4.2s" begin="{bgn}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="opacity" values="0.55;0" dur="4.2s" begin="{bgn}s" repeatCount="indefinite"/>'
+            f'</circle>'
+        )
+
+    body = f'''
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18" fill="url(#sbbg)"/>
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18" fill="url(#sbdots)" opacity="0.5"/>
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" rx="18" fill="none" stroke="#1c2a44" stroke-width="1.5"/>
+  <g stroke="#ffd166" stroke-width="2.4" fill="none" opacity="0.85">
+    <path d="M 38 52 L 38 36 L 54 36"/><path d="M {w-54} 36 L {w-38} 36 L {w-38} 52"/>
+    <path d="M 38 {h-52} L 38 {h-36} L 54 {h-36}"/><path d="M {w-54} {h-36} L {w-38} {h-36} L {w-38} {h-52}"/>
+  </g>
+  <g clip-path="url(#sbclip)">
+    <g opacity="0.14" stroke="#ffd166">
+      <animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="70s" repeatCount="indefinite"/>
+      {rays}
+    </g>
+    <ellipse cx="{cx}" cy="{cy}" rx="330" ry="260" fill="url(#sbglow)">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3.6s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="{cx}" cy="{cy}" r="120" fill="none" stroke="#ffd166" stroke-width="2" stroke-dasharray="4 14" opacity="0.65">
+      <animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="30s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="{cx}" cy="{cy}" r="185" fill="none" stroke="#ffd166" stroke-width="1.6" stroke-dasharray="2 18" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="360 {cx} {cy}" to="0 {cx} {cy}" dur="44s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="{cx}" cy="{cy}" r="250" fill="none" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="6 20" opacity="0.35">
+      <animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="58s" repeatCount="indefinite"/>
+    </circle>
+    {waves}
+  </g>
+  <text x="90" y="120" font-family="{FONT}" font-size="15" letter-spacing="4" fill="#ffd166" opacity="0.9">ARC 00 — THE DEFENDER'S VOW</text>
+  <text x="88" y="212" font-family="{FONT}" font-weight="bold" font-size="72" letter-spacing="8" fill="#ffd166" opacity="0.4" filter="url(#sbsoft)">SHIELD HERO</text>
+  <text x="88" y="212" font-family="{FONT}" font-weight="bold" font-size="72" letter-spacing="8" fill="url(#sbtitle)">SHIELD HERO</text>
+  <rect x="92" y="238" width="560" height="2.4" fill="url(#sbrule)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="92" y="286" font-family="{FONT}" font-size="21" letter-spacing="3" fill="#8be9fd">DEFENDING THE REALM — ONE COMMIT AT A TIME</text>
+  <g transform="translate(120,330)" fill="none" stroke="#ffd166" stroke-width="3">
+    <path d="M 0 10 H 104 V 70 C 104 116 58 142 52 146 C 46 142 0 116 0 70 Z" stroke-dasharray="470" stroke-dashoffset="470">
+      <animate attributeName="stroke-dashoffset" from="470" to="0" dur="2.4s" fill="freeze"/>
+      <animate attributeName="stroke-opacity" values="1;0.55;1" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 52 22 V 128" opacity="0.7"/>
+    <path d="M 12 70 H 92" opacity="0.7"/>
+    <circle cx="52" cy="72" r="7" fill="#ffd166" stroke="none">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="120" y="520" font-family="{FONT}" font-size="16" fill="#c9d1d9"><tspan fill="#ffd166">&#8250;</tspan> guard: <tspan fill="#7ee0ff">HospitalShield-AI</tspan> — climate-resilient hospital digital twin</text>
+  <text x="120" y="548" font-family="{FONT}" font-size="16" fill="#c9d1d9"><tspan fill="#ffd166">&#8250;</tspan> raid: <tspan fill="#7ee0ff">FUSION 2026</tspan> — international hackathon, HC-03 track</text>'''
+
+    svg = head + defs + body
+    svg += img_block(data, iw, ih, ix, iy, "#ffd166")
+    svg += f'''
+  <rect x="16" y="16" width="{w-32}" height="{h-32}" fill="#ffe28a" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.1;0;0;0.06;0" keyTimes="0;0.5;0.53;0.56;0.86;0.89;1" dur="7s" repeatCount="indefinite"/>
+  </rect>'''
+    svg += embers("sb", w, h - 40, 60, 16, ["#ffd166", "#fbbf24", "#ffe28a"], 6) + glint("sb", w, h)
+    svg += f'''
+  <rect x="21" y="30" width="{w-42}" height="1.5" fill="#ffd166" opacity="0.16">
+    <animate attributeName="y" values="30;{h-32};30" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>'''
+    write("shield-hero-banner.svg", svg)
+
+
 if __name__ == "__main__":
     build_naruto()
     build_solo()
     build_shield()
     build_hajime_red()
     build_hajime_aim()
+    build_shield_banner()

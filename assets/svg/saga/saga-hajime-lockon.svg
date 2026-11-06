@@ -34,7 +34,7 @@
   </circle>
   <rect x="40" y="42" width="159" height="26" rx="7" fill="#070b14" opacity="0.82"/>
   <rect x="40" y="42" width="159" height="26" rx="7" fill="none" stroke="#ff2e97" stroke-width="1" opacity="0.7"/>
-  <text x="51" y="60" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="13.5" letter-spacing="3" fill="#ff2e97">ARC 05 — LOCK ON</text>
+  <text x="51" y="60" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="13.5" letter-spacing="3" fill="#ff2e97">ARC 04 — LOCK ON</text>
     <circle cx="215" r="1.6" cy="700" fill="#ff2e97" opacity="0">
       <animate attributeName="cy" values="700;120" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
       <animate attributeName="cx" values="215;229;201;215" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
