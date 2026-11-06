@@ -50,7 +50,7 @@ def panel_base(pid: str, w: int, h: int, bg: tuple, arc: str, accent: str) -> tu
     <path d="M 38 52 L 38 36 L 54 36"/><path d="M {w-54} 36 L {w-38} 36 L {w-38} 52"/>
     <path d="M 38 {h-52} L 38 {h-36} L 54 {h-36}"/><path d="M {w-54} {h-36} L {w-38} {h-36} L {w-38} {h-52}"/>
   </g>
-  <text x="56" y="58" font-family="{FONT}" font-size="14" letter-spacing="3" fill="{accent}" opacity="0.9">{arc}</text>'''
+'''
     return head, defs + body
 
 
@@ -92,6 +92,14 @@ def caption(w: int, h: int, text: str, accent: str) -> str:
   <text x="{w//2}" y="{h-34}" text-anchor="middle" font-family="{FONT}" font-size="15.5" letter-spacing="1" fill="{accent}">{text}</text>'''
 
 
+def tag(w: int, arc: str, accent: str) -> str:
+    cw = int(len(arc) * 8.6) + 22
+    return f'''
+  <rect x="40" y="42" width="{cw}" height="26" rx="7" fill="#070b14" opacity="0.82"/>
+  <rect x="40" y="42" width="{cw}" height="26" rx="7" fill="none" stroke="{accent}" stroke-width="1" opacity="0.7"/>
+  <text x="51" y="60" font-family="{FONT}" font-size="13.5" letter-spacing="3" fill="{accent}">{arc}</text>'''
+
+
 # ─────────────────────────── ARC 01 — NARUTO (the grind) ───────────────────────────
 def build_naruto() -> None:
     data, iw, ih = b64(os.path.join(SRC, "Naruto.jpg"), 610)
@@ -101,7 +109,7 @@ def build_naruto() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{ix + iw//2}" cy="{iy + 170}" rx="230" ry="170" fill="url(#nzglow)">
     <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.4s" repeatCount="indefinite"/>
-  </ellipse>''' + img_block(data, iw, ih, ix, iy, "#ffb347") + embers("nz", w, h - 80, 120, 11, ["#ffd166", "#ffb347", "#ffe28a"], 1) + glint("nz", w, h) + caption(w, h, "THE NINJA WAY — grind in silence, let the results make the noise", "#ffd166") + "\n</svg>\n"
+  </ellipse>''' + img_block(data, iw, ih, ix, iy, "#ffb347") + tag(w, "ARC 01 — THE GRIND", "#ffb347") + embers("nz", w, h - 80, 120, 11, ["#ffd166", "#ffb347", "#ffe28a"], 1) + glint("nz", w, h) + caption(w, h, "THE NINJA WAY — grind in silence, let the results make the noise", "#ffd166") + "\n</svg>\n"
     write("saga-naruto.svg", svg)
 
 
@@ -146,7 +154,7 @@ def build_solo() -> None:
   </rect>
   <rect x="16" y="16" width="{w-32}" height="{h-32}" fill="#cdb9ff" opacity="0">
     <animate attributeName="opacity" values="0;0;0.13;0;0;0.07;0" keyTimes="0;0.5;0.53;0.56;0.85;0.88;1" dur="6.5s" repeatCount="indefinite"/>
-  </rect>''' + img_block(data, iw, ih, ix, iy, "#8b5cf6") + embers("sl", w, h - 70, 90, 12, ["#a78bfa", "#8b5cf6", "#c4b5fd"], 2) + glint("sl", w, h) + caption(w, h, "ARISE — level ups compound: certifications &#8594; hackathons &#8594; offers", "#c4b5fd") + "\n</svg>\n"
+  </rect>''' + img_block(data, iw, ih, ix, iy, "#8b5cf6") + tag(w, "ARC 02 — LEVEL UP", "#a78bfa") + embers("sl", w, h - 70, 90, 12, ["#a78bfa", "#8b5cf6", "#c4b5fd"], 2) + glint("sl", w, h) + caption(w, h, "ARISE — level ups compound: certifications &#8594; hackathons &#8594; offers", "#c4b5fd") + "\n</svg>\n"
     write("saga-solo.svg", svg)
 
 
@@ -167,7 +175,7 @@ def build_shield() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{cx}" cy="{cy}" rx="240" ry="200" fill="url(#shglow)">
     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.8s" repeatCount="indefinite"/>
-  </ellipse>{rings}''' + img_block(data, iw, ih, ix, iy, "#ffd166") + embers("sh", w, h - 80, 110, 9, ["#ffd166", "#fbbf24", "#fde68a"], 3) + glint("sh", w, h) + caption(w, h, "SHIELD UP — defending the realm: HospitalShield-AI &#183; FUSION 2026", "#fde68a") + "\n</svg>\n"
+  </ellipse>{rings}''' + img_block(data, iw, ih, ix, iy, "#ffd166") + tag(w, "ARC 03 — SHIELD UP", "#ffd166") + embers("sh", w, h - 80, 110, 9, ["#ffd166", "#fbbf24", "#fde68a"], 3) + glint("sh", w, h) + caption(w, h, "SHIELD UP — defending the realm: HospitalShield-AI &#183; FUSION 2026", "#fde68a") + "\n</svg>\n"
     write("saga-shield.svg", svg)
 
 
@@ -200,7 +208,7 @@ def build_hajime_red() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{ix + iw//2}" cy="{iy + 280}" rx="260" ry="220" fill="url(#hjglow)">
     <animate attributeName="opacity" values="0.4;0.75;0.4" dur="2.9s" repeatCount="indefinite"/>
-  </ellipse>''' + shake + sparks + embers("hj", w, h - 80, 120, 8, ["#ff2e97", "#ff4d6d", "#ffd166"], 4) + glint("hj", w, h) + caption(w, h, "FROM COMMONPLACE TO WORLD'S STRONGEST — fresher today, industry-ready today", "#ff9ec7") + "\n</svg>\n"
+  </ellipse>''' + shake + sparks + tag(w, "ARC 04 — REFORGED", "#ff2e97") + embers("hj", w, h - 80, 120, 8, ["#ff2e97", "#ff4d6d", "#ffd166"], 4) + glint("hj", w, h) + caption(w, h, "FROM COMMONPLACE TO WORLD'S STRONGEST — fresher today, industry-ready today", "#ff9ec7") + "\n</svg>\n"
     write("saga-hajime-reforged.svg", svg)
 
 
@@ -229,7 +237,7 @@ def build_hajime_aim() -> None:
   <circle cx="{mx}" cy="{my}" r="12" fill="none" stroke="#ff2e97" stroke-width="2" opacity="0">
     <animate attributeName="r" values="10;66" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.85;0" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
-  </circle>''' + embers("ha", w, h - 80, 120, 9, ["#ff2e97", "#ff6b9d", "#ffd166"], 5) + glint("ha", w, h) + caption(w, h, "AIM TRUE — precision shipping: 18+ REST APIs &#183; 4 hackathons &#183; 12 certifications", "#ff9ec7") + "\n</svg>\n"
+  </circle>''' + tag(w, "ARC 05 — LOCK ON", "#ff2e97") + embers("ha", w, h - 80, 120, 9, ["#ff2e97", "#ff6b9d", "#ffd166"], 5) + glint("ha", w, h) + caption(w, h, "AIM TRUE — precision shipping: 18+ REST APIs &#183; 4 hackathons &#183; 12 certifications", "#ff9ec7") + "\n</svg>\n"
     write("saga-hajime-lockon.svg", svg)
 
 

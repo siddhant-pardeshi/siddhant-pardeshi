@@ -15,7 +15,7 @@
     <path d="M 38 52 L 38 36 L 54 36"/><path d="M 646 36 L 662 36 L 662 52"/>
     <path d="M 38 728 L 38 744 L 54 744"/><path d="M 646 744 L 662 744 L 662 728"/>
   </g>
-  <text x="56" y="58" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="14" letter-spacing="3" fill="#ff2e97" opacity="0.9">ARC 04 — REFORGED</text>
+
   <ellipse cx="350" cy="310" rx="260" ry="220" fill="url(#hjglow)">
     <animate attributeName="opacity" values="0.4;0.75;0.4" dur="2.9s" repeatCount="indefinite"/>
   </ellipse>
@@ -58,6 +58,9 @@
       <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.4;0.48;0.56;1" dur="6.5s" begin="1.75s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0,0;-26,-28" dur="6.5s" begin="1.75s" repeatCount="indefinite"/>
     </line>
+  <rect x="40" y="42" width="168" height="26" rx="7" fill="#070b14" opacity="0.82"/>
+  <rect x="40" y="42" width="168" height="26" rx="7" fill="none" stroke="#ff2e97" stroke-width="1" opacity="0.7"/>
+  <text x="51" y="60" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="13.5" letter-spacing="3" fill="#ff2e97">ARC 04 — REFORGED</text>
     <circle cx="184" r="1.6" cy="700" fill="#ff2e97" opacity="0">
       <animate attributeName="cy" values="700;120" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
       <animate attributeName="cx" values="184;198;170;184" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>

@@ -15,7 +15,7 @@
     <path d="M 38 52 L 38 36 L 54 36"/><path d="M 646 36 L 662 36 L 662 52"/>
     <path d="M 38 728 L 38 744 L 54 744"/><path d="M 646 744 L 662 744 L 662 728"/>
   </g>
-  <text x="56" y="58" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="14" letter-spacing="3" fill="#ff2e97" opacity="0.9">ARC 05 — LOCK ON</text>
+
   <ellipse cx="350" cy="300" rx="250" ry="215" fill="url(#haglow)">
     <animate attributeName="opacity" values="0.38;0.7;0.38" dur="3.1s" repeatCount="indefinite"/>
   </ellipse>
@@ -32,6 +32,9 @@
     <animate attributeName="r" values="10;66" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.85;0" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
   </circle>
+  <rect x="40" y="42" width="159" height="26" rx="7" fill="#070b14" opacity="0.82"/>
+  <rect x="40" y="42" width="159" height="26" rx="7" fill="none" stroke="#ff2e97" stroke-width="1" opacity="0.7"/>
+  <text x="51" y="60" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="13.5" letter-spacing="3" fill="#ff2e97">ARC 05 — LOCK ON</text>
     <circle cx="215" r="1.6" cy="700" fill="#ff2e97" opacity="0">
       <animate attributeName="cy" values="700;120" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
       <animate attributeName="cx" values="215;229;201;215" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
