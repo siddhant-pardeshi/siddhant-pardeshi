@@ -109,7 +109,7 @@ def build_naruto() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{ix + iw//2}" cy="{iy + 170}" rx="230" ry="170" fill="url(#nzglow)">
     <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.4s" repeatCount="indefinite"/>
-  </ellipse>''' + img_block(data, iw, ih, ix, iy, "#ffb347") + tag(w, "ARC 01 — THE GRIND", "#ffb347") + embers("nz", w, h - 80, 120, 11, ["#ffd166", "#ffb347", "#ffe28a"], 1) + glint("nz", w, h) + caption(w, h, "THE NINJA WAY — grind in silence, let the results make the noise", "#ffd166") + "\n</svg>\n"
+  </ellipse>''' + img_block(data, iw, ih, ix, iy, "#ffb347") + tag(w, "ARC 01 — THE GRIND", "#ffb347") + embers("nz", w, h - 80, 120, 11, ["#ffd166", "#ffb347", "#ffe28a"], 1) + glint("nz", w, h) + caption(w, h, "THE NINJA WAY — grind in silence, shine in results", "#ffd166") + "\n</svg>\n"
     write("saga-naruto.svg", svg)
 
 
@@ -175,7 +175,7 @@ def build_shield() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{cx}" cy="{cy}" rx="240" ry="200" fill="url(#shglow)">
     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.8s" repeatCount="indefinite"/>
-  </ellipse>{rings}''' + img_block(data, iw, ih, ix, iy, "#ffd166") + tag(w, "ARC 03 — SHIELD UP", "#ffd166") + embers("sh", w, h - 80, 110, 9, ["#ffd166", "#fbbf24", "#fde68a"], 3) + glint("sh", w, h) + caption(w, h, "SHIELD UP — defending the realm: HospitalShield-AI &#183; FUSION 2026", "#fde68a") + "\n</svg>\n"
+  </ellipse>{rings}''' + img_block(data, iw, ih, ix, iy, "#ffd166") + tag(w, "ARC 03 — SHIELD UP", "#ffd166") + embers("sh", w, h - 80, 110, 9, ["#ffd166", "#fbbf24", "#fde68a"], 3) + glint("sh", w, h) + caption(w, h, "SHIELD UP — HospitalShield-AI &#183; FUSION 2026", "#fde68a") + "\n</svg>\n"
     write("saga-shield.svg", svg)
 
 
@@ -208,7 +208,7 @@ def build_hajime_red() -> None:
     svg = head + defs_part(body) + f'''
   <ellipse cx="{ix + iw//2}" cy="{iy + 280}" rx="260" ry="220" fill="url(#hjglow)">
     <animate attributeName="opacity" values="0.4;0.75;0.4" dur="2.9s" repeatCount="indefinite"/>
-  </ellipse>''' + shake + sparks + tag(w, "ARC 04 — REFORGED", "#ff2e97") + embers("hj", w, h - 80, 120, 8, ["#ff2e97", "#ff4d6d", "#ffd166"], 4) + glint("hj", w, h) + caption(w, h, "FROM COMMONPLACE TO WORLD'S STRONGEST — fresher today, industry-ready today", "#ff9ec7") + "\n</svg>\n"
+  </ellipse>''' + shake + sparks + tag(w, "ARC 04 — REFORGED", "#ff2e97") + embers("hj", w, h - 80, 120, 8, ["#ff2e97", "#ff4d6d", "#ffd166"], 4) + glint("hj", w, h) + caption(w, h, "REFORGED — from commonplace to world's strongest", "#ff9ec7") + "\n</svg>\n"
     write("saga-hajime-reforged.svg", svg)
 
 
@@ -237,7 +237,7 @@ def build_hajime_aim() -> None:
   <circle cx="{mx}" cy="{my}" r="12" fill="none" stroke="#ff2e97" stroke-width="2" opacity="0">
     <animate attributeName="r" values="10;66" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.85;0" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
-  </circle>''' + tag(w, "ARC 05 — LOCK ON", "#ff2e97") + embers("ha", w, h - 80, 120, 9, ["#ff2e97", "#ff6b9d", "#ffd166"], 5) + glint("ha", w, h) + caption(w, h, "AIM TRUE — precision shipping: 18+ REST APIs &#183; 4 hackathons &#183; 12 certifications", "#ff9ec7") + "\n</svg>\n"
+  </circle>''' + tag(w, "ARC 05 — LOCK ON", "#ff2e97") + embers("ha", w, h - 80, 120, 9, ["#ff2e97", "#ff6b9d", "#ffd166"], 5) + glint("ha", w, h) + caption(w, h, "AIM TRUE — 18+ REST APIs &#183; 4 hackathons &#183; 12 certs", "#ff9ec7") + "\n</svg>\n"
     write("saga-hajime-lockon.svg", svg)
 
 

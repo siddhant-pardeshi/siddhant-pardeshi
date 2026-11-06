@@ -84,5 +84,5 @@
     <animate attributeName="x" values="-260;700" dur="6.5s" repeatCount="indefinite"/>
   </rect>
   <line x1="36" y1="716" x2="664" y2="716" stroke="#1c2a44" stroke-width="1.2"/>
-  <text x="350" y="746" text-anchor="middle" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="15.5" letter-spacing="1" fill="#fde68a">SHIELD UP — defending the realm: HospitalShield-AI &#183; FUSION 2026</text>
+  <text x="350" y="746" text-anchor="middle" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="15.5" letter-spacing="1" fill="#fde68a">SHIELD UP — HospitalShield-AI &#183; FUSION 2026</text>
 </svg>
