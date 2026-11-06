@@ -353,7 +353,7 @@ signal:
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
 
 <div align="center">
-  <img src="assets/svg/naruto-banner.svg" width="100%" alt="Naruto cinematic banner — rasengan orb, falling gold sparks, chakra glow and smoke around the grind"/>
+  <img src="assets/svg/saga/naruto-banner.svg" width="100%" alt="Naruto cinematic banner — rasengan orb, falling gold sparks, chakra glow and smoke around the grind"/>
 </div>
 
 ## 🏆 ACHIEVEMENT_LOG
