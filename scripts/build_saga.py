@@ -4,18 +4,21 @@
 Each panel is a self-contained animated SVG: the artwork is embedded as a
 base64 data-URI (GitHub blocks external refs inside SVGs) and layered with
 SMIL effects themed to each arc. Re-run after replacing artwork in Hajime_Images.
+
+All builders print the SVG to stdout — create files with shell redirects:
+  python scripts/build_saga.py solo          > assets/svg/saga/saga-solo.svg
+  python scripts/build_saga.py shield-banner > assets/svg/saga/shield-hero-banner.svg
+  python scripts/build_saga.py hajime-banner > assets/svg/saga/hajime-banner.svg
 """
 import base64
 import io
 import os
+import sys
 
 from PIL import Image
 
 SRC = r"C:\Users\siddh\Downloads\Hajime_Images"
-OUT = os.path.join("assets", "svg", "saga")
 FONT = "Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace"
-
-os.makedirs(OUT, exist_ok=True)
 
 
 def b64(path: str, target_h: int) -> tuple[str, int, int]:
@@ -100,20 +103,20 @@ def tag(w: int, arc: str, accent: str) -> str:
   <text x="51" y="60" font-family="{FONT}" font-size="13.5" letter-spacing="3" fill="{accent}">{arc}</text>'''
 
 
-# ─────────────────────────── ARC 01 — NARUTO (the grind) ───────────────────────────
+# ─────────────────────────── ARC — NARUTO (the grind) ───────────────────────────
 def build_naruto() -> None:
     data, iw, ih = b64(os.path.join(SRC, "Naruto.jpg"), 610)
     w, h = 700, 780
     ix, iy = (w - iw) // 2, 30
-    head, body = panel_base("nz", w, h, ("#101408", "#0d1117", "#05070d"), "ARC 01 — THE GRIND", "#ffb347")
+    head, body = panel_base("nz", w, h, ("#101408", "#0d1117", "#05070d"), "ARC 03 — THE GRIND", "#ffb347")
     svg = head + defs_part(body) + f'''
   <ellipse cx="{ix + iw//2}" cy="{iy + 170}" rx="230" ry="170" fill="url(#nzglow)">
     <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.4s" repeatCount="indefinite"/>
   </ellipse>''' + img_block(data, iw, ih, ix, iy, "#ffb347") + tag(w, "ARC 03 — THE GRIND", "#ffb347") + embers("nz", w, h - 80, 120, 11, ["#ffd166", "#ffb347", "#ffe28a"], 1) + glint("nz", w, h) + caption(w, h, "THE NINJA WAY — grind in silence, shine in results", "#ffd166") + "\n</svg>\n"
-    write("saga-naruto.svg", svg)
+    sys.stdout.write(svg)
 
 
-# ─────────────────────── ARC 02 — SOLO LEVELING (level up) ───────────────────────
+# ─────────────────────── ARC — SOLO LEVELING (level up) ───────────────────────
 def build_solo() -> None:
     data, iw, ih = b64(os.path.join(SRC, "Solo Leveling.jpg"), 640)
     w, h = 1400, 760
@@ -154,11 +157,11 @@ def build_solo() -> None:
   </rect>
   <rect x="16" y="16" width="{w-32}" height="{h-32}" fill="#cdb9ff" opacity="0">
     <animate attributeName="opacity" values="0;0;0.13;0;0;0.07;0" keyTimes="0;0.5;0.53;0.56;0.85;0.88;1" dur="6.5s" repeatCount="indefinite"/>
-  </rect>''' + img_block(data, iw, ih, ix, iy, "#8b5cf6") + tag(w, "ARC 03 — LEVEL UP", "#a78bfa") + embers("sl", w, h - 70, 90, 12, ["#a78bfa", "#8b5cf6", "#c4b5fd"], 2) + glint("sl", w, h) + caption(w, h, "ARISE — level ups compound: certifications &#8594; hackathons &#8594; offers", "#c4b5fd") + "\n</svg>\n"
-    write("saga-solo.svg", svg)
+  </rect>''' + img_block(data, iw, ih, ix, iy, "#8b5cf6") + tag(w, "ARC 02 — LEVEL UP", "#a78bfa") + embers("sl", w, h - 70, 90, 12, ["#a78bfa", "#8b5cf6", "#c4b5fd"], 2) + glint("sl", w, h) + caption(w, h, "ARISE — level ups compound: certifications &#8594; hackathons &#8594; offers", "#c4b5fd") + "\n</svg>\n"
+    sys.stdout.write(svg)
 
 
-# ─────────────────────── ARC 03 — SHIELD HERO (defend) ───────────────────────
+# ─────────────────────── ARC — SHIELD HERO grid panel (retired layout) ───────────────────────
 def build_shield() -> None:
     data, iw, ih = b64(os.path.join(SRC, "Shield_Hero.jpg"), 610)
     w, h = 700, 780
@@ -176,15 +179,15 @@ def build_shield() -> None:
   <ellipse cx="{cx}" cy="{cy}" rx="240" ry="200" fill="url(#shglow)">
     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.8s" repeatCount="indefinite"/>
   </ellipse>{rings}''' + img_block(data, iw, ih, ix, iy, "#ffd166") + tag(w, "ARC 03 — SHIELD UP", "#ffd166") + embers("sh", w, h - 80, 110, 9, ["#ffd166", "#fbbf24", "#fde68a"], 3) + glint("sh", w, h) + caption(w, h, "SHIELD UP — HospitalShield-AI &#183; FUSION 2026", "#fde68a") + "\n</svg>\n"
-    write("saga-shield.svg", svg)
+    sys.stdout.write(svg)
 
 
-# ──────────────────── ARC 04 — HAJIME REFORGED (red burst) ────────────────────
+# ──────────────────── ARC — HAJIME REFORGED grid panel (retired layout) ────────────────────
 def build_hajime_red() -> None:
     data, iw, ih = b64(os.path.join(SRC, "Hajime_1.jpg"), 560)
     w, h = 700, 780
     ix, iy = (w - iw) // 2, 30
-    head, body = panel_base("hj", w, h, ("#140508", "#0d0b10", "#070508"), "ARC 04 — REFORGED", "#ff2e97")
+    head, body = panel_base("hj", w, h, ("#140508", "#0d0b10", "#070508"), "ARC 03 — REFORGED", "#ff2e97")
     shake = f'''
   <g>
     <animateTransform attributeName="transform" type="translate" values="0,0;-1.4,0.9;1.1,-0.7;-0.8,-1;0,0" dur="0.4s" repeatCount="indefinite"/>''' + img_block(data, iw, ih, ix, iy, "#ff2e97") + '''
@@ -209,16 +212,16 @@ def build_hajime_red() -> None:
   <ellipse cx="{ix + iw//2}" cy="{iy + 280}" rx="260" ry="220" fill="url(#hjglow)">
     <animate attributeName="opacity" values="0.4;0.75;0.4" dur="2.9s" repeatCount="indefinite"/>
   </ellipse>''' + shake + sparks + tag(w, "ARC 03 — REFORGED", "#ff2e97") + embers("hj", w, h - 80, 120, 8, ["#ff2e97", "#ff4d6d", "#ffd166"], 4) + glint("hj", w, h) + caption(w, h, "REFORGED — from commonplace to world's strongest", "#ff9ec7") + "\n</svg>\n"
-    write("saga-hajime-reforged.svg", svg)
+    sys.stdout.write(svg)
 
 
-# ──────────────────── ARC 05 — HAJIME LOCK ON (precision) ────────────────────
+# ──────────────────── ARC — HAJIME LOCK ON grid panel (retired layout) ────────────────────
 def build_hajime_aim() -> None:
     data, iw, ih = b64(os.path.join(SRC, "Hajime_2.jpg"), 560)
     w, h = 700, 780
     ix, iy = (w - iw) // 2, 30
     mx, my = ix + int(iw * 0.2), iy + int(ih * 0.1)   # muzzle area (gun points up-left)
-    head, body = panel_base("ha", w, h, ("#0d0510", "#0c0a12", "#060409"), "ARC 05 — LOCK ON", "#ff2e97")
+    head, body = panel_base("ha", w, h, ("#0d0510", "#0c0a12", "#060409"), "ARC 04 — LOCK ON", "#ff2e97")
     import math
     star_pts = " ".join(
         f"{mx + (16 if i % 2 == 0 else 6.5) * math.cos(-math.pi / 2 + i * math.pi / 5):.1f},"
@@ -238,21 +241,12 @@ def build_hajime_aim() -> None:
     <animate attributeName="r" values="10;66" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.85;0" dur="3.7s" keyTimes="0;0.94" begin="0s" repeatCount="indefinite"/>
   </circle>''' + tag(w, "ARC 04 — LOCK ON", "#ff2e97") + embers("ha", w, h - 80, 120, 9, ["#ff2e97", "#ff6b9d", "#ffd166"], 5) + glint("ha", w, h) + caption(w, h, "AIM TRUE — 18+ REST APIs &#183; 4 hackathons &#183; 12 certs", "#ff9ec7") + "\n</svg>\n"
-    write("saga-hajime-lockon.svg", svg)
+    sys.stdout.write(svg)
 
 
 def defs_part(body_with_defs: str) -> str:
     # panel_base returns (head, defs+body); we pass the combined string through
     return body_with_defs
-
-
-def write(name: str, svg: str) -> None:
-    path = os.path.join(OUT, name)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(svg)
-    print(f"{path}: {os.path.getsize(path) // 1024} KB")
-
-
 
 
 # ──────────────── ARC 00 — SHIELD HERO cinematic banner (hero slot) ────────────────
@@ -353,7 +347,7 @@ def build_shield_banner() -> None:
     <animate attributeName="y" values="30;{h-32};30" dur="9s" repeatCount="indefinite"/>
   </rect>
 </svg>'''
-    write("shield-hero-banner.svg", svg)
+    sys.stdout.write(svg)
 
 
 
@@ -445,7 +439,7 @@ def build_hajime_banner() -> None:
     <animate attributeName="y" values="30;{h-32};30" dur="8.5s" repeatCount="indefinite"/>
   </rect>
 </svg>'''
-    write("hajime-banner.svg", svg)
+    sys.stdout.write(svg)
 
 
 
@@ -520,7 +514,7 @@ def build_naruto_banner() -> None:
     {falling}
     {smoke}
   </g>
-  <text x="90" y="120" font-family="{FONT}" font-size="15" letter-spacing="4" fill="#ffb347" opacity="0.9">ARC 02 — THE GRIND</text>
+  <text x="90" y="120" font-family="{FONT}" font-size="15" letter-spacing="4" fill="#ffb347" opacity="0.9">ARC 04 — THE GRIND</text>
   <text x="88" y="212" font-family="{FONT}" font-weight="bold" font-size="76" letter-spacing="8" fill="#ffb347" opacity="0.4" filter="url(#nbsoft)">THE GRIND</text>
   <text x="88" y="212" font-family="{FONT}" font-weight="bold" font-size="76" letter-spacing="8" fill="url(#nbtitle)">THE GRIND</text>
   <rect x="92" y="240" width="560" height="2.4" fill="url(#nbrule)">
@@ -562,12 +556,23 @@ def build_naruto_banner() -> None:
     <animate attributeName="y" values="30;{h-32};30" dur="9s" repeatCount="indefinite"/>
   </rect>
 </svg>'''
-    write("naruto-banner.svg", svg)
+    sys.stdout.write(svg)
 
 
 if __name__ == "__main__":
-    build_solo()
-    build_shield()
-    build_hajime_aim()
-    build_shield_banner()
-    build_hajime_banner()
+    builders = {
+        "naruto-grid": build_naruto,
+        "solo": build_solo,
+        "shield-grid": build_shield,
+        "reforged-grid": build_hajime_red,
+        "lockon-grid": build_hajime_aim,
+        "shield-banner": build_shield_banner,
+        "hajime-banner": build_hajime_banner,
+        "naruto-banner": build_naruto_banner,
+    }
+    key = sys.argv[1] if len(sys.argv) > 1 else ""
+    fn = builders.get(key)
+    if fn is None:
+        print("usage: build_saga.py {" + " | ".join(builders) + "}  > output.svg", file=sys.stderr)
+        raise SystemExit(2)
+    fn()

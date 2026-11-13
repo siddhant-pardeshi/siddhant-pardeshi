@@ -35,7 +35,6 @@
   <text x="92" y="288" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="21" letter-spacing="3" fill="#fde68a">THE NINJA WAY — GRIND IN SILENCE, SHINE IN RESULTS</text>
   <text x="92" y="500" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="16" fill="#c9d1d9"><tspan fill="#ffb347">&#8250;</tspan> grind: <tspan fill="#7ee0ff">GATE 2025</tspan> — AIR 18571 of 170,825 · CGPA 8.13/10</text>
   <text x="92" y="528" font-family="Cascadia Code, Consolas, 'JetBrains Mono', Menlo, monospace" font-size="16" fill="#c9d1d9"><tspan fill="#ffb347">&#8250;</tspan> train: <tspan fill="#7ee0ff">DSA daily</tspan> · IT Vedant full-stack · 47 repositories</text>
-
   <g>
     <animateTransform attributeName="transform" type="translate" values="0,0;0,-12;0,0" dur="3.2s" repeatCount="indefinite"/>
     <circle cx="1042" cy="130" r="34" fill="#38bdf8" opacity="0.25" filter="url(#nbsoft)">
@@ -44,16 +43,15 @@
     <circle cx="1042" cy="130" r="17" fill="url(#rsgcore)"/>
     <g stroke="#7dd3fc" stroke-width="2.4" fill="none" stroke-linecap="round">
       <animateTransform attributeName="transform" type="rotate" from="0 1042 130" to="360 1042 130" dur="1.6s" repeatCount="indefinite"/>
-      <path d="M 1042 112 A 18 18 0 0 1 1058 136"/>
-      <path d="M 1042 148 A 18 18 0 0 1 1026 124"/>
-      <path d="M 1029 118 A 18 18 0 0 1 1054 120"/>
+      <path d="M 1042 112 A 18 18 0 0 1 1058 136" />
+      <path d="M 1042 148 A 18 18 0 0 1 1026 124" />
+      <path d="M 1029 118 A 18 18 0 0 1 1054 120" />
     </g>
     <circle cx="1042" cy="130" r="24" fill="none" stroke="#bae6fd" stroke-width="1.2" opacity="0.6">
       <animate attributeName="r" values="22;34;22" dur="2.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;0.15;0.6" dur="2.4s" repeatCount="indefinite"/>
     </circle>
   </g>
-
   <rect x="1157" y="37" width="276" height="486" rx="8" fill="none" stroke="#ffb347" stroke-width="1.6" opacity="0.6">
     <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
   </rect>

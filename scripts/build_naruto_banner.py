@@ -123,7 +123,8 @@ def build_naruto_banner() -> None:
     <animate attributeName="y" values="30;{h-32};30" dur="9s" repeatCount="indefinite"/>
   </rect>
 </svg>'''
-    B.write("naruto-banner.svg", svg)
+    import sys
+    sys.stdout.write(svg)
 
 
 if __name__ == "__main__":

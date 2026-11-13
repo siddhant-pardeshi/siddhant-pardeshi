@@ -185,10 +185,8 @@ def build() -> None:
     crew = "".join(cursor(*c) for c in CREW)
     svg = head + defs + body + crew + "\n</svg>\n"
 
-    out = os.path.join("assets", "svg", "page-forge.svg")
-    with open(out, "w", encoding="utf-8") as f:
-        f.write(svg)
-    print(f"{out}: {os.path.getsize(out) // 1024} KB")
+    import sys
+    sys.stdout.write(svg)
 
 
 if __name__ == "__main__":
