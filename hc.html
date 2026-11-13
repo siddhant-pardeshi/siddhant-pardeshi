@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="luke@glitch.je">
+    <meta name="description" content="The simplest way to track the number of people viewing your GitHub projects!">
+
+    <title>HitCount.dev</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+
+    <style>
+        .footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 30px;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+    background-color: rgb(249 250 251);
+}
+
+.header-section {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.subtitle {
+    color: rgb(107 114 128);
+    font-size: 20px;
+}
+
+.donate-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.create-section {
+    min-height: 350px;
+    padding-bottom: 50px;
+    background: rgb(31 41 55);
+    display: flex;
+    justify-content: center;
+}
+
+.create-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    height: fit-content;
+    width: 60%;
+    margin-top: -100px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .create-panel {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+
+input, select {
+    height: 30px;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.url-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.url-container > label {
+    font-size: 18px;
+    color: #6B46C1;
+    margin-bottom: 5px;
+}
+
+.url-container span {
+    margin-top: 5px;
+    color: #6c757d;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container label {
+    margin-right: 10px;
+}
+
+.style {
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .style {
+        margin-bottom: 10px;
+    }
+}
+
+.style select {
+    width: 150px;
+}
+
+.color input {
+    max-width: 50px;
+}
+
+.label-color {
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .label-color {
+        margin-bottom: 10px;
+    }
+}
+
+.options-row {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .options-row {
+        flex-direction: column;
+    }
+}
+
+.options-section {
+    display: block;
+}
+
+.options-section>label {
+    font-size: 18px;
+    color: #6B46C1;
+    margin-bottom: 5px;
+}
+
+.options-section>p {
+    color: #6c757d;
+}
+
+.preview-badge {
+    margin-top: 10px;
+}
+
+.generate-btn {
+    height: 30px;
+    margin-top: auto;
+}
+
+.preview-container {
+    display: none;
+    border-top: 1px solid #ececec;
+    padding-top: 20px;
+}
+
+.preview-container > p {
+    margin-bottom: 5px;
+}
+
+.preview-code {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    overflow: scroll;
+}
+
+#error-container {
+    display: none;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+.realtime-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.realtime-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.realtime-subtitle {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+#realtime-loading {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#realtime-container {
+    margin-top: 30px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.realtime-update {
+    display: flex;
+    width: fit-content;
+}
+
+.realtime-date {
+    margin-right: 10px;
+}
+
+.realtime-path {
+
+}
+
+.realtime-count {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.color-picker {
+    border: 1px solid;
+    border-color: var(--stroke-color-picker__controls);
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.color-picker__dialog {
+    margin-top: -1px;
+}
+
+.more-styling-text {
+    font-size: 14px;
+    color: #6c757d;
+}    </style>
+    <style>
+:root{--color-color-picker__controls:#000;--fill-color-picker__controls:0 0;--height-color-picker__controls:10em;--shadow-color-picker__dialog:1px 3px 6px rgba(0, 0, 0, .5);--size-color-picker__controls:12px;--stroke-color-picker__controls:#000;--width-color-picker__control--a:1.5em;--width-color-picker__control--h:1.5em;--width-color-picker__control--s\/v:10em}.color-picker__control--a,.color-picker__control--h,.color-picker__control--s\/v{-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;background-size:100% 100%;position:relative;user-select:none}.color-picker__control--a div,.color-picker__control--h div,.color-picker__control--s\/v div{bottom:0;left:0;position:absolute;right:0;top:0}.color-picker__control--a,.color-picker__control--h{border-left:1px solid;cursor:ns-resize;overflow:hidden}.color-picker__control--a{width:var(--width-color-picker__control--a)}.color-picker__control--a div{z-index:2}.color-picker__control--a div+div{background-image:linear-gradient(45deg,#ddd 25%,transparent 25%,transparent 75%,#ddd 75%,#ddd 100%),linear-gradient(45deg,#ddd 25%,#fff 25%,#fff 75%,#ddd 75%,#ddd 100%);background-position:0 0,.25em .25em;background-size:.5em .5em;z-index:1}.color-picker__control--h{width:var(--width-color-picker__control--a)}.color-picker__control--h div{background-image:linear-gradient(to top,red 0,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,red 100%)}.color-picker__control--s\/v{cursor:crosshair;overflow:hidden;width:var(--width-color-picker__control--s\/v)}.color-picker__control--s\/v div+div{background-image:linear-gradient(to right,#fff,rgba(255,255,255,0))}.color-picker__control--s\/v div+div+div{background-image:linear-gradient(to top,#000,rgba(0,0,0,0))}.color-picker__controls{background:var(--fill-color-picker__controls);border-radius:var(--arc-color-picker__controls);border:1px solid;border-color:var(--stroke-color-picker__controls);color:var(--color-color-picker__controls);display:flex;height:var(--height-color-picker__controls);overflow:hidden}.color-picker__dialog{box-shadow:var(--shadow-color-picker__dialog);left:0;position:absolute;top:0;z-index:9999}.color-picker__dialog,.color-picker__dialog *,.color-picker__dialog ::after,.color-picker__dialog ::before,.color-picker__dialog::after,.color-picker__dialog::before{box-sizing:border-box;font:inherit}.color-picker__cursor{border-color:inherit;color:inherit;font:inherit;font-size:var(--size-color-picker__controls)}.color-picker__cursor--a,.color-picker__cursor--h{display:block;height:.5em;left:0;position:absolute;right:0;top:-.25em;z-index:2}.color-picker__cursor--a::before,.color-picker__cursor--h::before{border:.25em solid;border-bottom-color:transparent;border-top-color:transparent;bottom:0;content:"";display:block;left:0;position:absolute;right:0;top:0}.color-picker__cursor--s\/v{display:block;height:.75em;position:absolute;right:-.375em;top:-.375em;width:.75em;z-index:2}.color-picker__cursor--s\/v::before{border-radius:100%;border:1px solid #fff;bottom:0;box-shadow:0 0 2px #000;content:"";display:block;left:0;position:absolute;right:0;top:0}    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJVLW2RSW1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KJVLW2RSW1');
+    </script>
+</head>
+
+<body>
+    <div class="header-section">
+        <h1 class="title">Hit Counter</h1>
+        <p class="subtitle">The simplest way to track the number of people viewing your GitHub projects!</p>
+
+        <div class="donate-wrapper">
+            <a href="https://www.buymeacoffee.com/lukeeey" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;" ></a>
+            <iframe src="https://github.com/sponsors/lukeeey/button" title="Sponsor lukeeey" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+        </div>
+    </div>
+
+    <div class="create-section">
+        <div class="create-panel">
+            <div class="url-container">
+                <label for="url">Repo Details</label>
+                <div class="options-row">
+                    <div class="input-container style editable">
+                        <label for="username">GitHub Username</label>
+                        <input id="username" name="username" type="text">
+                    </div>
+                    <div class="input-container label editable">
+                        <label for="repo">GitHub Repo</label>
+                        <input id="repo" name="repo" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="options-section">
+                <label>Options</label>
+                <p>Customize the style of your badge</p>
+
+                <div id="preview-badge" class="preview-badge"></div>
+            </div>
+            <div class="options-row">
+                <div class="input-container style editable">
+                    <label for="style">Style</label>
+                    <select id="style">
+                        <option value="flat" selected>Flat</option>
+                        <option value="pixel">Pixel (Invisible)</option>
+                    </select>
+                </div>
+                <div class="input-container label editable">
+                    <label for="label">Label</label>
+                    <input id="label" name="label" type="text" placeholder="hits" value="hits">
+                </div>
+            </div>
+            <div class="options-row">
+                <div class="input-container color label-color editable">
+                    <label for="label-color">Label Colour</label>
+                    <input id="label-color" name="label-color" type="text" placeholder="#555555" value="#555555">
+                </div>
+                <div class="input-container color count-color editable">
+                    <label for="count-color">Count Colour</label>
+                    <input id="count-color" name="count-color" type="text" placeholder="#44cc11" value="#44cc11">
+                </div>
+            </div>
+            <div class="more-styling-text">
+                For more styling options, use <a href="https://github.com/lukeeey/hitcount/blob/master/README.md#shieldsio-badge" target="_blank">the shields.io endpoint</a>
+            </div>
+
+            <div id="error-container"></div>
+
+            <div id="preview-container" class="preview-container">
+                <p>Markdown</p>
+                <div id="markdown-container" class="preview-code"></div>
+
+                <p style="margin-top:15px">HTML</p>
+                <div id="html-container" class="preview-code"></div>
+            </div>
+
+            <button id="generate-btn" class="generate-btn">Generate</button>
+        </div>
+    </div>
+
+    <div class="realtime-section">
+        <div>
+            <h2 class="realtime-title">Realtime Updates</h2>
+            <p class="realtime-subtitle">See hits in realtime as they come in!</p>
+
+            <div id="realtime-loading">Loading...</div>
+
+            <div id="realtime-container"></div>
+        </div>
+    </div>
+
+<div class="footer">
+    <a href="https://github.com/lukeeey/hitcount">View on GitHub <img src="/static/images/github-mark.png" height="16" alt="GitHub Logo"></a>
+    <a href="/cdn-cgi/l/email-protection#1579607e705572797c61767d3b7f70">Contact</a>
+    <a href="/leaderboard">Leaderboard</a>
+</div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="/static/js/color-picker.min.js"></script>
+    <script type="text/javascript" src="/static/js/script.js"></script>
+</body>
+
+</html>
