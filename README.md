@@ -67,6 +67,8 @@ signal:
 
 `▸ REST APIs shipped` — **18+** across projects
 
+`▸ LIVE DEPLOYMENT` — [idc-ai-agent.vercel.app](https://idc-ai-agent.vercel.app) · Gemini agent with tool-calling + human approval gate
+
 `▸ CURRENT UPLINK` — IT Vedant · Java Full Stack (in progress)
 
 `▸ CORE MODULES` — DSA · OOP · DBMS · MVC Layered Architecture
@@ -146,6 +148,21 @@ signal:
 <div align="center"><img src="assets/svg/section-divider.svg" width="94%" alt="divider"/></div>
 
 ## 🚀 FEATURED_MISSIONS
+
+### ⬢ IDCPUNE26 — Beyond ChatGPT: Build Your First AI Agent 🟢 LIVE
+`Python` `Gemini 3.5 Flash` `FastAPI` `Tool-calling` `Human-in-the-loop` `Docker` `Vercel`
+
+- 🤖 A chatbot talks — an agent **acts**. Gemini decides, **your Python code** runs the tool, and a human must approve before anything real happens
+- 🧠 Automatic function calling disabled on purpose: the full loop is visible — decide → propose → **approve** → save → confirm
+- 🎫 One transparent tool: `create_ticket()` → human-readable `tickets.json` (id · title · priority · status · timestamp)
+- 📚 Built for the **Indian Data Club Pune** workshop — documented with hand-drawn animated SVG diagrams (architecture, terminal loop, approval gate)
+
+<a href="https://idc-ai-agent.vercel.app"><img src="https://img.shields.io/badge/●_LIVE_DEMO-idc--ai--agent.vercel.app-39ff14?style=for-the-badge&labelColor=0d1117" alt="live demo"/></a>
+<a href="https://github.com/siddhant-pardeshi/IDCPUNE26"><img src="https://img.shields.io/badge/SOURCE_CODE-GitHub-00e5ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="source code"/></a>
+
+<div align="center">
+<a href="https://github.com/siddhant-pardeshi/IDCPUNE26"><img src="https://raw.githubusercontent.com/siddhant-pardeshi/IDCPUNE26/master/assets/banner.svg" width="92%" alt="Beyond ChatGPT — animated agent banner: YOU → GEMINI → TOOL with flowing data pulses"/></a>
+</div>
 
 ### ⬢ MetroMind — AI Commute Copilot for the Pune Metro 🏆 TOP-10 · 4TH PLACE
 `TypeScript` `Next.js` `React` `Zustand` `Dijkstra Routing` `Vitest`
@@ -362,6 +379,7 @@ signal:
 
 ```diff
 + 🚇 MetroMind @ DevDay Exchange Metro Hackathon Pune — TOP-10 FINALIST · 4TH PLACE OVERALL
++ 🤖 IDCPUNE26 — "Beyond ChatGPT" AI agent — built & deployed LIVE (Gemini tool-calling · FastAPI · Vercel)
 + 🥇 GATE 2025 Qualified — Computer Science & IT (Score 370 · AIR 18571)
 + 🌍 FUSION 2026 International Hackathon — Participant, Certificate of Achievement (SKNCOE)
 + 🤖 FlytBase Tireless Hand Challenge — Certificate of Participation (Sept 2026)
